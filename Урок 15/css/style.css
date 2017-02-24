@@ -16,7 +16,7 @@ body {
 }
 section {
   margin-top: 5%;
-  height: 100vh;
+  height: 90vh;
 }
 input:focus,
 textarea:focus,
@@ -121,7 +121,7 @@ header {
 .main-form-btn {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  background-color: #fc6744;
+  background-color: #ff5c36;
   border: none;
   width: 230px;
   height: 55px;
@@ -137,6 +137,15 @@ header {
   -o-border-radius: 50px;
   border-radius: 50px;
 }
+.main-form-btn:hover {
+  box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.08);
+}
+.main-form-btn span {
+  font-size: 20px;
+  position: relative;
+  padding-bottom: 10px;
+  left: 20px;
+}
 .main-form input,
 .main-form textarea {
   width: 100%;
@@ -145,7 +154,7 @@ header {
   margin-top: 30px;
   font-size: 15px;
 }
-/*Gamburger*/
+/*====== Gamburger =========*/
 .line {
   width: 35px;
   height: 4px;
@@ -193,28 +202,31 @@ header {
   transform: translateY(6px);
 }
 /*===================WORKING PROCESS===================*/
-.info-box {
+.process-box {
   text-align: center;
   margin-top: 100px;
 }
-.info-box i.fa {
+.process-box:hover {
+  box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.21);
+}
+.process-box i.fa {
   margin-top: 50px;
   font-size: 50px;
   color: #ffffff;
 }
-.info-box .fa-camera-retro {
+.process-box .fa-camera-retro {
   -webkit-transform: rotate(-20deg);
   -ms-transform: rotate(-20deg);
   -o-transform: rotate(-20deg);
   transform: rotate(-20deg);
 }
-.info-box h3 {
+.process-box h3 {
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
-.info-box p {
+.process-box p {
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -222,10 +234,8 @@ header {
   margin-top: 20px;
   margin-bottom: 15px;
 }
-.info-box-btn {
-  display: inline-block;
+.process-box-btn {
   position: relative;
-  text-decoration: none;
   background-color: #ffffff;
   border: none;
   -webkit-border-radius: 27px;
@@ -240,6 +250,9 @@ header {
   font-size: 16px;
   padding: 15px 35px;
   width: 90%;
+}
+.process-box-btn:hover {
+  box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.09);
 }
 .light-blue {
   background-color: #4eb2f7;
@@ -272,4 +285,151 @@ header {
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
+}
+/*==============WORKS===============*/
+section#works {
+  padding-top: 5%;
+  background-color: #f5f5f5;
+  height: 100%;
+  padding-bottom: 10%;
+}
+section#works .works-box {
+  width: 360px;
+  position: relative;
+}
+section#works .works-row {
+  margin-top: 3%;
+}
+section#works .works-row-first {
+  margin-top: 10%;
+}
+section#works .signature {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+section#works .signature:hover {
+  opacity: 1;
+}
+section#works .sign {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+section#works button {
+  padding: 10px 30px;
+  border: none;
+  background-color: #ff5c36;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+}
+/*============== Services We Provide ========== */
+.services-list {
+  list-style: none;
+}
+.services-list-item {
+  width: 100px;
+  height: 100px;
+  background-color: #fbfbfb;
+  text-align: center;
+  margin-top: 10px;
+}
+.services-list-item:hover {
+  background-color: #fff;
+  box-shadow: 0px 0px 36px 0px rgba(20, 20, 21, 0.2);
+}
+.services h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+.services-line {
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  background-color: #fc6744;
+  margin-bottom: 10px;
+}
+.services p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.services-btn {
+  background-color: #ffffff;
+  border: 1px solid #efeeef;
+  -webkit-border-radius: 27px;
+  -moz-border-radius: 27px;
+  -ms-border-radius: 27px;
+  -o-border-radius: 27px;
+  border-radius: 27px;
+  color: #626262;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 10px 60px;
+  margin-top: 20px;
+  box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.09);
+}
+.services-btn:hover {
+  background-color: #fc6744;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+.services-btn span {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: 10px;
+}
+.services-info {
+  padding-left: 65px;
+}
+.services-info-row {
+  margin-top: 5%;
+}
+section#faq {
+  padding-top: 5%;
+  background-color: #f5f5f5;
+  height: 100vh;
+}
+.panel-group {
+  margin-top: 5%;
+}
+.panel-default a {
+  color: #585858;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.panel-default > .panel-heading {
+  background-color: #f5f5f5;
+}
+.panel-default > .panel-heading:hover {
+  box-shadow: 0px 0px 5px 0px #fc6744;
+}
+.panel-heading {
+  cursor: pointer;
 }
