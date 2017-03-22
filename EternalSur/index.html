@@ -11,6 +11,7 @@
 	</style>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slicknav.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
@@ -36,7 +37,7 @@
 			</div>
 			<div class="col-xs-12 col-md-6 login">
 				<ul>
-					<li><a href="#"><span class="fa fa-user-circle-o"></span> Login</a></li>
+					<li><a href="http://vk.com"><span class="fa fa-user-circle-o"></span> Login</a></li>
 					<li><a href="#"><span class="fa fa-pencil"></span> Register</a></li>
 				</ul>
 			</div>
@@ -47,19 +48,32 @@
 <section id="header-bot">
 	<div class="container">
 		<div class="row header-bot-row">
-			<div class="col-md-3">
-				<a class="header-logo" href="#"><img src="img/logo.png" alt="Amber logo"></a>
+			<div class="col-md-3 logo">
+				<a class="header-logo" href="http://vk.com"><img src="img/logo.png" alt="Amber logo"></a>
 			</div>
-			<div class="col-md-9 header-nav">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li class="orange"><a href="#">Typography</a></li>
-					<li class="pink"><a href="#">Blog</a></li>
-					<li class="purple"><a href="#">Pages</a></li>
-					<li class="violent"><a href="#">Elements</a></li>
-					<li class="blue"><a href="#">Ecommerse</a></li>
-					<li class="light-blue"><a href="#">Mega Menu</a></li>
-				</ul>
+			<div class="col-md-9">
+				<div class="header-nav">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li class="orange"><a href="#">Typography</a></li>
+						<li class="pink"><a href="#">Blog</a></li>
+						<li class="purple"><a href="#">Pages</a></li>
+						<li class="violent"><a href="#">Elements</a></li>
+						<li class="blue"><a href="#">Ecommerse</a></li>
+						<li class="light-blue"><a href="#">Mega Menu</a></li>
+					</ul>
+				</div>
+				<div class="header-nav-mini">
+					<ul id="nav-bar">
+						<li><a href="#">Home</a></li>
+						<li class="orange"><a href="#">Typography</a></li>
+						<li class="pink"><a href="#">Blog</a></li>
+						<li class="purple"><a href="#">Pages</a></li>
+						<li class="violent"><a href="#">Elements</a></li>
+						<li class="blue"><a href="#">Ecommerse</a></li>
+						<li class="light-blue"><a href="#">Mega Menu</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -501,7 +515,8 @@
 				<p>© 2014 StylemixThemes. All rights reserved. <br>Powered by WordPress.</p>
 			</div>
 			<div class="col-xs-6">
-				<a href="#main">Back to top of page <span class="fa fa-angle-up"></span></a>
+				<a class="big-screen" href="#main">Back to top of page <span class="fa fa-angle-up"></span></a>
+				<a class="small-screen" href="#main"> <span class="fa fa-angle-up"> </a>
 			</div>
 		</div>
 	</div>
@@ -516,9 +531,17 @@
 
 
 
-	<script type="text/javascript	" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<!-- Nav-bar -->
+		<script>
+			$(function(){
+				$('#nav-bar').slicknav();
+			});
+	</script>
+
 	<!-- Main slider -->
 	<script>
 				$(document).ready(function(){

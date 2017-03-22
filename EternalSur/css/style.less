@@ -95,6 +95,9 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 	}
 }
 // ========================= HEADER BOTTOM ========================
+.slicknav_menu {
+	display: none;
+}
 section#header-bot {
 	background-color: @base-grey;
 }
@@ -104,6 +107,9 @@ section#header-bot {
 		margin-top: 10px;
 	}
 	&-nav {
+		&-mini {
+			display: none;
+		}
 		ul {
 			list-style: none;
 			font-size: 0;
@@ -832,7 +838,7 @@ footer {
 		font-size: 12px;
 		line-height: 25px;
 	}
-	a {
+	.big-screen {
 		display: inline-block;
 		padding: 10px 50px 10px 30px;
 		border: 2px solid @base-green;
@@ -850,8 +856,14 @@ footer {
 			right: 15px;
 		}
 	}
+	.small-screen {
+		display: none;
+	}
 }
 @media (max-width: 480px) {
+	.slicknav_menu {
+	display: block;
+}
 	section#header-top {
 		.header{
 			&-top-row{
@@ -863,6 +875,7 @@ footer {
 	}
 	.login {
 		text-align: center;
+		display: block;
 		ul {
 			float: none;
 			padding: 0;
@@ -877,15 +890,29 @@ footer {
 		.header{
 			&-bot-row {
 				text-align: center;
+				.logo {
+					display: block;
+					min-height: 100px;
+					margin-top: 10%;
+				}
 			}
 			&-logo{
 				margin-bottom: 10%;
 				display: inline-block;
 			}
+			&-nav {
+				display: none;
+				&-mini {
+
+					ul {
+						list-style: none;
+						li {
+							text-decoration: none;
+						}
+					}
+				}
+			}
 		}	
-		li {
-			display: none;
-		}
 	}
 	section#main {
 		.main {
@@ -898,6 +925,8 @@ footer {
 					margin-top: 20%;
 				}
 				button {
+					margin: 0 15%;
+					display: inline-block;
 					margin-top: 1%;
 				}
 			}
@@ -994,8 +1023,16 @@ footer {
 			&-item {
 				margin-top: 15%;
 				text-align: center;
+				img {
+					display: inline-block;
+					text-align: center;
+				}
+				&:before {
+					width: 100%;
+				}
 				.comments {
 					display: inline-block;
+					text-align: center;
 					span {
 						color: @base-green;
 						margin:0 10px 0 10em;
@@ -1008,7 +1045,7 @@ footer {
 		}
 	}
 	section#expirience {
-		height: 290vh;
+		height: 1%;
 		.expirience {
 			&-dots {
 				top: 10px;
@@ -1024,20 +1061,22 @@ footer {
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
+				margin-bottom: 30%;
 			}
 		}
 	}
 	section#team {
 		.profile-hidden {
+			top: 15%;
 			padding: 40px 30px;
 			max-height: 170px;
-			
+			min-height: 66%;
 			.team-quot {
-				padding-top: 15%;
 				.light;
 				font-size: 14px;
 				line-height: 20px;
 				color: @text-black;
+				margin-top: 20%;
 			}
 		}
 		.team {
@@ -1055,7 +1094,62 @@ footer {
 		}
 	}
 	footer {
-
+		.footer {
+			&-row {
+				text-align: center;
+				.get {
+					h4 {
+						margin-top: 15%;
+					}
+					p {
+						margin: 10% 0 0;
+						text-align: left;
+					}
+				}
+				.twit {
+					h4 {
+						margin-top: 15%;
+					}
+					p {
+						padding: 0 5%;
+					}
+					.tweet {
+						margin: 13% 0 0;
+					}
+				}
+				.social {
+					text-align: left;
+					&-item {
+						margin-left: 10%;
+					}
+					h4 {
+						text-align: center;
+						margin-top: 20%;
+					}
+				}
+				.posts {
+					h4 {
+						margin-top: 20%;
+					}
+					p {
+						margin-top: 15%;
+					}
+				}
+			}
+			&-bot {
+				margin-top: 30%;
+				.big-screen {
+					display: none;
+				}
+				.small-screen {
+					display: inline-block;
+					padding: 10px 20px;
+					border: 2px solid @base-green;
+					color: @white;
+					margin: 20% 5% 0 0;
+				}
+			}
+		}
 	}
 }
 @media (min-width: 481px) and (max-width: 767px) {

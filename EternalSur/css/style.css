@@ -109,12 +109,18 @@ input:focus:-ms-input-placeholder {
 .login ul li a:hover {
   color: #bec6cc;
 }
+.slicknav_menu {
+  display: none;
+}
 section#header-bot {
   background-color: #474747;
 }
 .header-logo {
   display: inline-block;
   margin-top: 10px;
+}
+.header-nav-mini {
+  display: none;
 }
 .header-nav ul {
   list-style: none;
@@ -809,25 +815,31 @@ footer {
   font-size: 12px;
   line-height: 25px;
 }
-.footer-bot a {
+.footer-bot .big-screen {
   display: inline-block;
   padding: 10px 50px 10px 30px;
   border: 2px solid #02baab;
   color: #ffffff;
   position: relative;
 }
-.footer-bot a:hover {
+.footer-bot .big-screen:hover {
   color: #02baab;
   padding: 10px 55px 10px 30px;
 }
-.footer-bot a span {
+.footer-bot .big-screen span {
   color: #02baab;
   font-size: 30px;
   position: absolute;
   top: 5%;
   right: 15px;
 }
+.footer-bot .small-screen {
+  display: none;
+}
 @media (max-width: 480px) {
+  .slicknav_menu {
+    display: block;
+  }
   section#header-top .header-top-row {
     text-align: center;
   }
@@ -836,6 +848,7 @@ footer {
   }
   section#header-top .login {
     text-align: center;
+    display: block;
   }
   section#header-top .login ul {
     float: none;
@@ -848,12 +861,23 @@ footer {
   section#header-bot .header-bot-row {
     text-align: center;
   }
+  section#header-bot .header-bot-row .logo {
+    display: block;
+    min-height: 100px;
+    margin-top: 10%;
+  }
   section#header-bot .header-logo {
     margin-bottom: 10%;
     display: inline-block;
   }
-  section#header-bot li {
+  section#header-bot .header-nav {
     display: none;
+  }
+  section#header-bot .header-nav-mini ul {
+    list-style: none;
+  }
+  section#header-bot .header-nav-mini ul li {
+    text-decoration: none;
   }
   section#main .main-slider h1 {
     margin-top: 20%;
@@ -863,6 +887,8 @@ footer {
     margin-top: 20%;
   }
   section#main .main-slider button {
+    margin: 0 15%;
+    display: inline-block;
     margin-top: 1%;
   }
   section#month .month-row h3 {
@@ -926,8 +952,16 @@ footer {
     margin-top: 15%;
     text-align: center;
   }
+  section#blog .blog-item img {
+    display: inline-block;
+    text-align: center;
+  }
+  section#blog .blog-item:before {
+    width: 100%;
+  }
   section#blog .blog-item .comments {
     display: inline-block;
+    text-align: center;
   }
   section#blog .blog-item .comments span {
     color: #02baab;
@@ -937,7 +971,7 @@ footer {
     font-size: 12px;
   }
   section#expirience {
-    height: 290vh;
+    height: 1%;
   }
   section#expirience .expirience-dots {
     top: 10px;
@@ -953,23 +987,74 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30%;
   }
   section#team .profile-hidden {
+    top: 15%;
     padding: 40px 30px;
     max-height: 170px;
+    min-height: 66%;
   }
   section#team .profile-hidden .team-quot {
-    padding-top: 15%;
     font-family: "Oxygen", arial, sans-serif;
     font-weight: 300;
     font-size: 14px;
     line-height: 20px;
     color: #3b4954;
+    margin-top: 20%;
   }
   section#team .team-text h3 {
     padding-top: 10%;
   }
   section#team .team-block {
     margin-top: 20%;
+  }
+  footer .footer-row {
+    text-align: center;
+  }
+  footer .footer-row .get h4 {
+    margin-top: 15%;
+  }
+  footer .footer-row .get p {
+    margin: 10% 0 0;
+    text-align: left;
+  }
+  footer .footer-row .twit h4 {
+    margin-top: 15%;
+  }
+  footer .footer-row .twit p {
+    padding: 0 5%;
+  }
+  footer .footer-row .twit .tweet {
+    margin: 13% 0 0;
+  }
+  footer .footer-row .social {
+    text-align: left;
+  }
+  footer .footer-row .social-item {
+    margin-left: 10%;
+  }
+  footer .footer-row .social h4 {
+    text-align: center;
+    margin-top: 20%;
+  }
+  footer .footer-row .posts h4 {
+    margin-top: 20%;
+  }
+  footer .footer-row .posts p {
+    margin-top: 15%;
+  }
+  footer .footer-bot {
+    margin-top: 30%;
+  }
+  footer .footer-bot .big-screen {
+    display: none;
+  }
+  footer .footer-bot .small-screen {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #02baab;
+    color: #ffffff;
+    margin: 20% 5% 0 0;
   }
 }
