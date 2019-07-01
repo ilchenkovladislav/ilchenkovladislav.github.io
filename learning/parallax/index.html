@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<title>Параллакс прокрутка</title>
+
+		<meta charset="utf-8" />
+		<meta name="description" content="Это демо страница на которой показан параллакс при прокрутке страницы с использованием JQuery" />
+                <meta name="keywords" content="параллакс, JQuery, прокрутка" />
+		<link rel="stylesheet" media="all" href="css/main.css" />
+
+		
+		<!-- Grab Google CDN's jQuery. fall back to local if necessary --> 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> 
+		<script>!window.jQuery && document.write('<script src="/js/jquery-1.6.1.min.js"><\/script>')</script>
+		<script src="js/parallax.js"></script>
+	</head>
+
+	<body>
+
+		<div id="wrapper">
+			
+			<nav id="primary">
+				<ul>
+					<li>
+						<h1>Облачно, слабый дождь</h1>
+						<a class="manned-flight" href="#manned-flight">View</a>
+					</li>
+					<li>
+						<h1>Переменная облачность</h1>
+						<a class="frameless-parachute" href="#frameless-parachute">View</a>
+					</li>
+					<li>
+						<h1>Грозовые дожди</h1>
+						<a class="english-channel" href="#english-channel">View</a>
+					</li>
+					<li>
+						<h1>Вот и все</h1>
+						<a class="about" href="#about">View</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- Текст на странице-->
+			<div id="content">
+				<article id="manned-flight">
+					<header>
+						<h1>Облачно, слабый дождь</h1>
+					</header>
+					<p>Здес пример текста для описания прогноза погоды</p>
+					<nav class="next-prev">
+						<hr />
+						<a class="next frameless-parachute" href="#frameless-parachute">Next</a>
+					</nav>
+				</article>
+				
+				<article id="frameless-parachute">
+					<header>
+						<h1>Переменная облачность</h1>
+					</header>
+					<p>Здесь пишем второй пример для переменной облачности</p>
+					<nav class="next-prev">
+						<a class="prev manned-flight" href="#manned-flight">Prev</a>
+						<hr />
+						<a class="next english-channel" href="#english-channel">Next</a>
+					</nav>
+				</article>
+				
+				<article id="english-channel">
+					<header>
+						<h1>Грозовые дожди</h1>
+					</header>
+					<p>Третий пример для грозовых дождей</p>
+					<nav class="next-prev">
+						<a class="prev frameless-parachute" href="#frameless-parachute">Prev</a>
+						<hr />
+						<a class="next about" href="#about">Next</a>
+					</nav>
+				</article>
+				
+				<article id="about">
+					<header>
+						<h1>Вот и все</h1>
+					</header>
+					<p>Это пример параллакса при прокрутке.
+					<nav class="next-prev">
+						<a class="prev english-channel" href="#english-channel">Prev</a>
+						<hr />
+					</nav>
+				</article>
+			</div>
+			
+			<!-- Первый слой -->
+			<div id="parallax-bg3">
+				<img id="bg3-1" src="img/balloon.png" alt="Montgolfier hot air balloon"/>
+				<img id="bg3-2" src="img/balloon2.png" alt="Frameless parachute"/>
+				<img id="bg3-3" src="img/tu4i4.png" width="446" height="713" alt="Blanchard's air balloon"/>
+				<img id="bg3-4" src="img/ground.png" width="1104" height="684" alt="Landscape with trees and cows"/>
+			</div>
+			
+			<!-- Второй слой -->
+			<div id="parallax-bg2">
+				<img id="bg2-1" src="img/cloud-lg1.png" alt="cloud"/>
+				<img id="bg2-2" src="img/cloud-lg1.png" alt="cloud"/>
+				<img id="bg2-3" src="img/cloud-lg1.png" alt="cloud"/>
+				<img id="bg2-4" src="img/cloud-lg1.png" alt="cloud"/>
+				<img id="bg2-5" src="img/cloud-lg1.png" alt="cloud"/>
+			</div>
+			
+			<!-- Третий слой -->
+			<div id="parallax-bg1">
+				<img id="bg1-1" src="img/cloud-lg2.png" alt="cloud"/>
+				<img id="bg1-2" src="img/cloud-lg2.png" alt="cloud"/>
+				<img id="bg1-3" src="img/cloud-lg2.png" alt="cloud"/>
+				<img id="bg1-4" src="img/cloud-lg2.png" alt="cloud"/>
+			</div>
+		
+		</div>
+	
+	</body>
+  
+</html>
