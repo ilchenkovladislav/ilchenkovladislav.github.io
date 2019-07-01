@@ -105,7 +105,7 @@ img {
 
 @media (min-width: 768px) {
   .page-header__logo {
-    background: #242424 url("../../img/back-tablet.jpg") no-repeat center center;
+    background: #242424 url("../img/back-tablet.jpg") no-repeat center center;
     background-size: cover;
     background-color: transparent;
     order: 2;
@@ -113,7 +113,7 @@ img {
     height: 400px; } }
   @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
     .page-header__logo {
-      background-image: url("../../img/back-tablet@2x.jpg"); } }
+      background-image: url("../img/back-tablet@2x.jpg"); } }
 
 @media (min-width: 768px) {
   .page-header__logo-image {
@@ -123,10 +123,10 @@ img {
 @media (min-width: 1200px) {
   .page-header__logo {
     height: 650px;
-    background-image: url("../../img/back-desktop.jpg"); } }
+    background-image: url("../img/back-desktop.jpg"); } }
   @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
     .page-header__logo {
-      background-image: url("../../img/back-desktop@2x.jpg"); } }
+      background-image: url("../img/back-desktop@2x.jpg"); } }
 
 .main-nav {
   position: relative;
@@ -311,7 +311,7 @@ img {
   padding: 10px 0 10px 45px; }
   .user-list__login::before {
     content: "";
-    background-image: url("../../img/login-icon.svg");
+    background-image: url("../img/login-icon.svg");
     width: 15px;
     height: 15px;
     display: block;
@@ -992,11 +992,11 @@ img {
   background-repeat: no-repeat;
   background-position: center center; }
   .social__link--vk {
-    background-image: url("../../img/vk-icon-big.png"); }
+    background-image: url("../img/vk-icon-big.png"); }
   .social__link--fb {
-    background-image: url("../../img/facebook-icon-big.png"); }
+    background-image: url("../img/facebook-icon-big.png"); }
   .social__link--inst {
-    background-image: url("../../img/insta-icon-big.png"); }
+    background-image: url("../img/insta-icon-big.png"); }
 
 .social__slogan {
   display: none; }
@@ -1010,11 +1010,11 @@ img {
     width: 50px;
     height: 50px; }
     .social__link--vk {
-      background-image: url("../../img/vk-icon-small.png"); }
+      background-image: url("../img/vk-icon-small.png"); }
     .social__link--fb {
-      background-image: url("../../img/facebook-icon-small.png.png"); }
+      background-image: url("../img/facebook-icon-small.png.png"); }
     .social__link--inst {
-      background-image: url("../../img/insta-icon-small.png.png"); }
+      background-image: url("../img/insta-icon-small.png.png"); }
   .social__slogan {
     display: block;
     color: #fff;
@@ -1092,7 +1092,7 @@ img {
     content: "";
     width: 50px;
     height: 49px;
-    background-image: url("../../img/admiral-beard.svg");
+    background-image: url("../img/admiral-beard.svg");
     background-repeat: no-repeat;
     position: absolute;
     bottom: -60px;
