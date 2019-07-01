@@ -18,23 +18,3 @@ loginFormClose.addEventListener("click", function (e) {
     e.preventDefault();
     loginFormTablet.classList.toggle("login-popup--opened");
 });
-
-let time = 1;
-
-preloader__close.addEventListener("click", function () {
-    preloader.style.display = "none";
-    clearInterval(interval);
-    clearTimeout(timeout);
-});
-
-let timer = function() {
-    console.log(time + " секунд");
-    preloader__text.innerHTML = "Загрузка длится: " + time++ + " секунд";
-}
-
-let interval = setInterval(timer, 1000);
-
-let timeout = setTimeout(function () {
-    preloader.style.display = "none";
-    clearInterval(interval);
-}, 10000);
