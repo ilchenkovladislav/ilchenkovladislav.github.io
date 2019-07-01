@@ -1,0 +1,77 @@
+.banner-blog .banner__image{
+    background-image: url("../../app/img/contactbg.jpg");
+}
+
+.news .news__list .news__item .blog-thumbnail {
+    width: 300px;
+}
+
+.main-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    .news {
+        width: 1000px;
+        padding-right: 50px;
+    }
+    .sidebar {
+        width: 250px;
+        .search-news__input {
+            background-color: $blue;
+            border: none;
+            padding: 10px 15px;
+            color: #fff;
+            margin-top: 10px;
+            width: 100%;
+        }
+        h3 {
+            background-color: $blue;
+            padding: 10px 15px;
+        }
+        .sidebar__categories {
+            .categories__list {
+                list-style: none;
+                padding-left: 20px;
+                li {
+                    margin-bottom: 10px;
+                    a:hover {
+                        color: $light-blue;
+                    }
+                }
+            }
+        }
+        .sidebar__popular-news {
+            .popular-news__list {
+                list-style: none;
+                padding: 0;
+                .popular-news__item {
+                    display: flex;
+                    margin-bottom: 20px;
+                    a {
+                        width: 100px;
+                        flex-shrink: 0;
+                    }
+                    .popular-news__info {
+                        margin-left: 25px;
+                        width: 150px;
+                        h3 {
+                            background-color: transparent;
+                            padding: 0;
+                            font-size: 18px;
+                            margin: 0;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            a:hover {
+                                color: $light-blue;
+                            }
+                        }
+                        time {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

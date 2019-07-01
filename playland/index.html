@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <title>PlayLand</title>
+    <!-- Normalize css -->
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <!-- Font Rubik -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/solid.css" integrity="sha384-+0VIRx+yz1WBcCTXBkVQYIBVNEFH1eP6Zknm16roZCyeNg2maWEpk/l/KsyFKs7G" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0" crossorigin="anonymous">
+    <!-- Add the slick-theme.css-->
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+    <!-- Add the slick-theme.css-->
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+    <!-- Custom Main css -->
+    <link rel="stylesheet" href="../dist/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container-inner">
+            <a href="index.html" class="header__logo">
+                <img class="logo" src="./img/iconfinder-icon.svg" alt="">    
+                <p class="header__logo-text">PlayLand</p>
+            </a>
+            <nav class="nav-bar">
+                <ul class="top-nav__left">
+                    <li class="top-nav__left-item"><a href="#">Магазин</a></li>
+                    <li class="top-nav__left-item"><a href="blog.html">Обзоры</a></li>
+                    <li class="top-nav__left-item"><a href="contact.html">Контакты</a></li>
+                </ul>
+                <ul class="top-nav__right">
+                    <li class="top-nav__right-item"><a href="#">User</a></li>
+                    <li class="top-nav__right-item"><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li class="top-nav__right-item"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li class="top-nav__right-item"><a href="#"><i class="fas fa-user"></i></a></li>
+                </ul>
+            </nav>
+            <div class="nav-bar__toggle">
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-outer">
+        <section class="banner-index">
+            <div class="banner__image jarallax" style="background: url('img/mainbg.jpg');"></div>
+            <div class="banner__info container-inner">
+                <h1>PlayLand: <br>
+                Игровой портал для души</h1>
+            </div>
+        </section>
+        <section class="best-games">
+                <ul class="games__list">
+                    <li class="games__item">
+                        <a href="store-product.html">
+                            <div class="games__item-info">
+                                <h3>World Of Warcraft</h3>
+                                <ul class="rating-list">
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="half-star"></li>
+                                </ul>
+                            </div>
+                            <img src="img/wow.jpg" alt="Том кленси">
+                        </a>
+                    </li>
+                    <li class="games__item">
+                        <a href="store-product.html">
+                            <div class="games__item-info">
+                                <h3>Hitman 6</h3>
+                                <ul class="rating-list">
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="half-star"></li>
+                                </ul>
+                            </div>
+                            <img src="img/hitman_vi.jpg" alt="Том кленси">
+                        </a>
+                    </li>
+                    <li class="games__item">
+                        <a href="store-product.html">
+                            <div class="games__item-info">
+                                <h3>Halo</h3>
+                                <ul class="rating-list">
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                </ul>
+                            </div>
+                            <img src="img/halo.jpg" alt="Том кленси">
+                        </a>
+                    </li>
+                    <li class="games__item">
+                        <a href="store-product.html">
+                            <div class="games__item-info">
+                                <h3>God Of War 4</h3>
+                                <ul class="rating-list">
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="half-star"></li>
+                                </ul>
+                            </div>
+                            <img src="img/god_of_war.jpg" alt="Том кленси">
+                        </a>
+                    </li>
+                    <li class="games__item">
+                        <a href="store-product.html">
+                            <div class="games__item-info">
+                                <h3>Call of Duty BOIII</h3>
+                                <ul class="rating-list">
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                </ul>
+                            </div>
+                            <img src="img/codbo.jpg" alt="Том кленси">
+                        </a>
+                    </li>
+                    <li class="games__item">
+                        <a href="store-product.html">
+                            <div class="games__item-info">
+                                <h3>Mortal Combat XI</h3>
+                                <ul class="rating-list">
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                </ul>
+                            </div>
+                            <img src="img/mk.jpg" alt="Том кленси">
+                        </a>
+                    </li>
+                </ul>
+        </section>
+
+        <section class="specials-games">
+            <h2 class="container-inner">Скидки</h2>
+            <ul class="games__list">
+                <li class="games__item">
+                    <a href="store-product.html">
+                        <div class="games__item-info">
+                            <h3>Dragon Eternity</h3>
+                            <span class="line"></span>
+                            <div class="row-wrapper">
+                                <ul class="rating-list">
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="half-star"></li>
+                                </ul>
+                                <p>800р<del>1000р</del></p>
+                            </div>
+                        </div>
+                        <img src="img/dragon_eternity.jpg" alt="Том кленси">
+                    </a>
+                </li>
+                <li class="games__item">
+                    <a href="store-product.html">
+                        <div class="games__item-info">
+                            <h3>Crysis 3</h3>
+                            <span class="line"></span>
+                            <div class="row-wrapper">
+                                <ul class="rating-list">
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="half-star"></li>
+                                </ul>
+                                <p>600р<del>1100р</del></p>
+                            </div>
+                        </div>
+                        <img src="img/crysis.jpg" alt="Том кленси">
+                    </a>
+                </li>
+                <li class="games__item">
+                    <a href="store-product.html">
+                        <div class="games__item-info">
+                            <h3>Far Cry 4</h3>
+                            <span class="line"></span>
+                            <div class="row-wrapper">
+                                <ul class="rating-list">
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                </ul>
+                                <p>1200р<del>1500р</del></p>
+                            </div>
+                        </div>
+                        <img src="img/far_cry_4.jpg" alt="Том кленси">
+                    </a>
+                </li>
+                <li class="games__item">
+                    <a href="store-product.html">
+                        <div class="games__item-info">
+                            <h3>FallOut 4</h3>
+                            <span class="line"></span>
+                            <div class="row-wrapper">
+                                <ul class="rating-list">
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                </ul>
+                                <p>1000р<del>1500р</del></p>
+                            </div>
+                        </div>
+                        <img src="img/fallout.jpg" alt="Том кленси">
+                    </a>
+                </li>
+                <li class="games__item">
+                    <a href="store-product.html">
+                        <div class="games__item-info">
+                            <h3>Sims 4</h3>
+                            <span class="line"></span>
+                            <div class="row-wrapper">
+                                <ul class="rating-list">
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="half-star"></li>
+                                </ul>
+                                <p>800р<del>900р</del></p>
+                            </div>
+                        </div>
+                        <img src="img/sims4.jpg" alt="Том кленси">
+                    </a>
+                </li>
+                <li class="games__item">
+                    <a href="store-product.html">
+                        <div class="games__item-info">
+                            <h3>GTA V</h3>
+                            <span class="line"></span>
+                            <div class="row-wrapper">
+                                <ul class="rating-list">
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="full-star"></li>
+                                    <li class="half-star"></li>
+                                </ul>
+                                <p>1100р<del>1400р</del></p>
+                            </div>
+                        </div>
+                        <img src="img/gta5.jpg" alt="Том кленси">
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="news container-inner">
+            <h2>Последние новости</h2>
+            <ul class="news__list">
+                <li class="news__item">
+                    <a class="news-thumbnail" href="#"><img src="img/hearstone.jpg" alt=""></a>
+                    <div class="news__item-info">
+                        <div class="first-row">
+                            <h3><a href="#">Hearstone - Новое обновление</a></h3>
+                            <time datetime="2019-02-11">Сегодня</time>
+                        </div>
+                        <ul class="news-tags">
+                            <li><a href="#">карточные</a></li>
+                            <li><a href="#">игры</a></li>
+                            <li><a href="#">обновление</a></li>
+                        </ul>
+                        <p>
+                            Gus sit amet suum motum. Nescio quando, aut quomodo, nescio quo. Illud scio, amet tortor. Suarum impotens prohibere eum.
+                            <br> <br>
+                            Sum expectantes. Ego hodie expectantes. Expectantes, et misit unum de pueris Gus interficere. Et suus vos. Nescio quis, qui est bonus usus liberi ad Isai? Qui nosti ... Quis dimisit filios ad necem ... hmm? Gus!
+                        </p>
+                        <a class="button news-btn" href="#">Подробнее</a>
+                    </div>
+                </li>
+                <li class="news__item">
+                    <a class="news-thumbnail" href="#"><img src="img/red_steel.jpg" alt=""></a>
+                    <div class="news__item-info">
+                        <div class="first-row">
+                            <h3><a href="#">Red Steel - Новости мира</a></h3>
+                            <time datetime="2019-02-11">Вчера</time>
+                        </div>
+                        <ul class="news-tags">
+                            <li><a href="#">игры</a></li>
+                            <li><a href="#">новости</a></li>
+                            <li><a href="#">mmorpg</a></li>
+                        </ul>
+                        <p>
+                            Gus sit amet suum motum. Nescio quando, aut quomodo, nescio quo. Illud scio, amet tortor. Suarum impotens prohibere eum.
+                            <br> <br>
+                            Sum expectantes. Ego hodie expectantes. Expectantes, et misit unum de pueris Gus interficere. Et suus vos. Nescio quis, qui est bonus usus liberi ad Isai? Qui nosti ... Quis dimisit filios ad necem ... hmm? Gus!
+                        </p>
+                        <a class="button news-btn" href="#">Подробнее</a>
+                    </div>
+                </li>
+                <li class="news__item">
+                    <a class="news-thumbnail" href="#"><img src="img/dmc5.jpg" alt=""></a>
+                    <div class="news__item-info">
+                        <div class="first-row">
+                            <h3><a href="#">Devil May Cry - Снова в деле</a></h3>
+                            <time datetime="2019-02-11">03.02.19</time>
+                        </div>
+                        <ul class="news-tags">
+                            <li><a href="#">игры</a></li>
+                            <li><a href="#">обзор</a></li>
+                            <li><a href="#">шутеры</a></li>
+                        </ul>
+                        <p>
+                            Gus sit amet suum motum. Nescio quando, aut quomodo, nescio quo. Illud scio, amet tortor. Suarum impotens prohibere eum.
+                            <br> <br>
+                            Sum expectantes. Ego hodie expectantes. Expectantes, et misit unum de pueris Gus interficere. Et suus vos. Nescio quis, qui est bonus usus liberi ad Isai? Qui nosti ... Quis dimisit filios ad necem ... hmm? Gus!
+                        </p>
+                        <a class="button news-btn" href="#">Подробнее</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="partners container-inner jarallax" style="background: url('img/dark_souls_laty_schit_strely_mech_19816_1920x1200.jpg') center center;">
+            <h2>Партнеры</h2>
+            <ul class="partners__list">
+                <li><img src="../dist/img/icons/twitter.svg" alt=""></li>
+                <li><img src="../dist/img/icons/twitter.svg" alt=""></li>
+                <li><img src="../dist/img/icons/twitter.svg" alt=""></li>
+                <li><img src="../dist/img/icons/twitter.svg" alt=""></li>
+                <li><img src="../dist/img/icons/twitter.svg" alt=""></li>
+                <li><img src="../dist/img/icons/twitter.svg" alt=""></li>
+            </ul>
+        </section>
+
+        <section class="advantages container-inner">
+            <h2>Почему мы</h2>
+            <ul class="advantages__list">
+                <li class="advantages__item">
+                    <h3>Оплата</h3>
+                    <p>Более 10 платежных систем</p>
+                </li>
+                <li class="advantages__item">
+                    <h3>Игры</h3>
+                    <p>Огромное количество игр</p>
+                </li>
+                <li class="advantages__item">
+                    <h3>Экономия</h3>
+                    <p>Низкие цены</p>
+                </li>
+                <li class="advantages__item">
+                    <h3>Скорость</h3>
+                    <p>Мгновенная отправка</p>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+    
+
+    <footer  class="main-footer container-outer jarallax" style="background: url('img/footer_bg.jpg') center center;">
+        <section class="social">
+            <h2>Присоединяйтесь к нам в социальных сетях</h2>
+            <ul class="social-list">
+                <li><a href="#"><span>Вконтакте</span></a></li>
+                <li><a href="#"><span>YouTube</span></a></li>
+                <li><a href="#"><span>Instagram</span></a></li>
+                <li><a href="#"><span>Twitter</span></a></li>
+            </ul>
+        </section>
+        <section class="copyrite">
+            <p>2018 © All rights reserved</p>
+        </section>
+    </footer>
+</body>
+
+<script>
+    let toggle = document.querySelector(".nav-bar__toggle");
+    let nav_bar = document.querySelector(".nav-bar");
+    
+    toggle.addEventListener("click", function(){
+        if (toggle.className == "nav-bar__toggle") {
+            toggle.className = "nav-bar__toggle nav-bar__toggle_active";
+            nav_bar.className = "nav-bar nav-bar_active";
+        } else {
+            toggle.className = "nav-bar__toggle";
+            nav_bar.className = "nav-bar";
+        }
+    })
+</script>
+
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+</script>
+
+<script>    
+        let logo = document.querySelector(".header");
+        let header = document.querySelector(".banner__info");
+        let social = document.querySelector(".social");
+        console.log(document.documentElement.scrollHeight - social.scrollHeight - 100);
+        
+    
+        window.onscroll = function(){
+            let x = window.pageYOffset;
+            console.log(x + "x");
+            
+            
+            if (window.pageYOffset < 500) {
+                header.style.transform = "translate3d(0,"+ x/5 +"px,0)";
+                header.style.opacity = 1 - (x/430);
+            }
+            if (window.pageYOffset > 60) {
+                logo.className = "header header_mini";
+            } else {
+                logo.className = "header";
+            }
+        }
+    </script>
+
+    <!-- slick-slider -->
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.games__list').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 4
+        });
+    });
+</script>
+
+<!-- Jarallax -->
+<script src="https://unpkg.com/jarallax@1.10/dist/jarallax.min.js"></script>
+<script>
+    $('.jarallax').jarallax({
+        speed: 0.7
+    });
+</script>
+</html>

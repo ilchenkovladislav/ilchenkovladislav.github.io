@@ -1,0 +1,37 @@
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media (max-width: 998px) {
+    .top-nav__left, .top-nav__right {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 5px 0;
+    }
+
+    .top-nav__left-item, .top-nav__right-item {
+        margin: 10px 0;
+    }
+
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 100vh;
+        background-color: $bgblue;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 70px;
+
+    }
+    .nav-bar_active {
+        width: 300px;
+        transition: all .3s;
+    }
+}

@@ -1,0 +1,294 @@
+h2 {
+    font-size: 40px;
+}
+.banner-index {
+    .banner__image {
+        // background: url("../../app/img/mainbg.jpg") center center;
+        background-size: cover;
+    }
+}
+
+.best-games, .specials-games{
+    .games__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        height: 200px;
+        .games__item {
+            position: relative;
+            a{
+                display: block;
+                height: 200px;
+                text-align: center;
+                img {
+                    opacity: .7;
+                    object-fit: cover;
+                    object-position: center;
+                    transition: all .1s;
+                    transform: skew(-7deg);
+                    height: 100%;
+                    width: 100%;
+                }
+                &:hover img{
+                    opacity: 1;
+                    transition: all .1s;
+                }
+            }
+                
+            .rating-list {
+                list-style: none;
+                display: flex;
+                padding: 0;
+                justify-content: center;
+                .full-star {
+                    background-image: url("../img/icons/star.svg");
+                    width: 20px;
+                    height: 20px;
+                    margin: 0 5px;
+                }
+                .half-star {
+                    background-image: url("../img/icons/half-black-star-shape.svg");
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            .games__item-info {
+                width: 100%;
+                z-index: 1;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+.specials-games {
+    margin-top: 75px;
+    .games__list {
+        height: 400px;
+        .games__item {
+            a {
+                height: 400px;
+                img {
+                    height: 250px;
+                }
+            }
+            .rating-list {
+                .full-star {
+                    width: 15px;
+                    height: 15px;
+                    margin: 0 3px;
+                }
+                .half-star {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+
+            .games__item-info { 
+                top: 65%;
+                left: 45%;
+                transform: translateX(-50%);
+                z-index: -1;
+                h3 {
+                    margin-top: 10px;
+                    margin-bottom: 0;
+                }
+                .line {
+                    display: inline-block;
+                    text-align: center;
+                    width: 150px;
+                    height: 1px;
+                    background-color: #555;
+                }
+                .row-wrapper {
+                    display: flex;
+                    justify-content: space-around;
+                    margin-top: 10px;
+                    p {
+                        margin: 0;
+                        font-size: 16px;
+                        del {
+                            color: #bbb;
+                            font-size: 12px;
+                            vertical-align: top;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .slick-next {
+        top: 175px;
+        height: 350px;
+    }
+    
+    .slick-prev {
+        top: 175px;
+        height: 350px;
+    }
+}
+
+
+
+.slick-next {
+    width: 100px;
+    height: 200px;
+    right: 0;
+    background-image: linear-gradient(to left,#000,rgba(8,3,37,0));
+    &:hover, &:active, &:focus {
+        background-image: linear-gradient(to left,lighten(#000, 5%),rgba(8,3,37,0));
+    }
+}
+
+.slick-prev {
+    z-index: 1;
+    width: 100px;
+    height: 200px;
+    left: 0;
+    background-image: linear-gradient(to right,#000,rgba(8,3,37,0));
+    &:hover, &:active, &:focus {
+        background-image: linear-gradient(to right,lighten(#000, 5%),rgba(8,3,37,0));
+    }
+}
+
+.news {
+    h3 {
+        margin: 0;
+    }
+    .news__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        .news__item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 50px;
+            .news-thumbnail {
+                display: block;
+                opacity: .8;
+                width: 400px;
+                transition: all .1s;
+                &:hover {
+                    transition: all .1s;
+                    opacity: 1;
+                }
+            }
+            .news__item-info {
+                margin-left: 30px;
+                flex-grow: 1;
+                flex-basis: 500px;
+                .first-row {
+                    display: flex;
+                    justify-content: space-between;
+                    a:hover {
+                        color: $light-blue;
+                    }
+                }
+                .news-tags {
+                    display: flex;
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        margin-right: 5px;
+                        a:hover {
+                            color: $light-blue;
+                        }
+                    }
+                }
+                p {
+                    line-height: 24px;
+                }
+                .news-btn {
+                    margin-top: 20px;
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
+
+.partners {
+    margin-top: 100px;
+    text-align: center;
+    padding: 50px 0 150px 0;
+    background-image: url("../img/dark_souls_laty_schit_strely_mech_19816_1920x1200.jpg");
+    .partners__list {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin-top: 100px;
+        list-style: none;
+        li {
+            width: 100px;
+            margin: 0 40px;
+        }
+    }
+}
+
+.advantages {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    .advantages__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin-top: 50px;
+        .advantages__item {
+            position: relative;
+            width: 250px;
+            background-color: $blue;
+            padding-top: 100px;
+            text-align: center;
+            h3 {
+                margin-bottom: 0;
+            }
+            p {
+                margin-top: 10px;
+            }
+            &::before{
+                content: "";
+                display: block;
+                width: 75px;
+                height: 75px;
+                position: absolute;
+                top: 15%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &:nth-child(1)::before{
+                background-image: url("../img/icons/credit-card.svg");
+            }   
+            &:nth-child(2)::before{
+                top: 10%;
+                background-image: url("../img/icons/joystick.svg");
+            }   
+            &:nth-child(3)::before{
+                background-image: url("../img/icons/banknote.svg");
+            }   
+            &:nth-child(4)::before{
+                background-image: url("../img/icons/speed.svg");
+            }   
+        }
+    }
+}
+
+.jarallax {
+    position: relative;
+    z-index: 0;
+}
+.jarallax > .jarallax-img {
+    position: absolute;
+    object-fit: cover;
+    /* support for plugin https://github.com/bfred-it/object-fit-images */
+    font-family: 'object-fit: cover;';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}

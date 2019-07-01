@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PlayLand</title>
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/solid.css" integrity="sha384-+0VIRx+yz1WBcCTXBkVQYIBVNEFH1eP6Zknm16roZCyeNg2maWEpk/l/KsyFKs7G" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0" crossorigin="anonymous">
+    <link rel="stylesheet" href="../dist/css/main.css">
+    <!--[if !IE]><script src="https://unpkg.com/jarallax@1.10/dist/jarallax.min.js"></script><![endif]-->
+</head>
+<body>
+    <header class="header">
+        <div class="container-inner">
+            <a href="index.html" class="header__logo">
+                <img class="logo" src="./img/iconfinder-icon.svg" alt="">    
+                <p class="header__logo-text">PlayLand</p>
+            </a>
+            <nav class="nav-bar">
+                <ul class="top-nav__left">
+                    <li class="top-nav__left-item"><a href="#">Магазин</a></li>
+                    <li class="top-nav__left-item"><a href="blog.html">Обзоры</a></li>
+                    <li class="top-nav__left-item"><a href="#">Контакты</a></li>
+                </ul>
+                <ul class="top-nav__right">
+                    <li class="top-nav__right-item"><a href="#">User</a></li>
+                    <li class="top-nav__right-item"><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li class="top-nav__right-item"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li class="top-nav__right-item"><a href="#"><i class="fas fa-user"></i></a></li>
+                </ul>
+            </nav>
+            <div class="nav-bar__toggle">
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-outer">
+        <section class="banner">
+            <div class="banner__image jarallax" style="background: url('img/dark_souls_laty_schit_strely_mech_19816_1920x1200.jpg');"></div>
+            <div class="banner__info container-inner">
+                <h1>Контакты</h1>
+            </div>
+        </section>
+
+        <section id="map">
+            <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3d44d15d82f326d89d81f8332b0041667c6b0981f49a18ad88068cfc7dc9d9b9&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script> -->
+        </section>
+        <div class="index-columns container-inner">
+            <section class="contact-info">
+                <h2>Контактная информация</h2>
+                <p>ул. Костюкова, 46, главный корпус</p>
+                <p> Тел: +7 910 225 12 97<br>
+                    Email: valdes98nv@yandex.ru
+                </p>
+            </section>
+    
+            <section class="drop-us">
+                <h2>Напишите нам</h2>
+                    <form id="drop-us__form" action="#" method="POST">
+                    <div class="first-row">
+                        <input type="text" name="name" required placeholder="Имя">
+                        <input type="email" name="email" required placeholder="Email">
+                    </div>
+                    <textarea name="message" cols="30" rows="5" required placeholder="Сообщение"></textarea>
+                    <button class="button" type="submit">Отправить</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer  class="main-footer container-outer jarallax" style="background: url('img/footer_bg.jpg') center center;">
+        <section class="social">
+            <h2>Присоединяйтесь к нам в социальных сетях</h2>
+            <ul class="social-list">
+                <li><a href="#"><span>Вконтакте</span></a></li>
+                <li><a href="#"><span>YouTube</span></a></li>
+                <li><a href="#"><span>Instagram</span></a></li>
+                <li><a href="#"><span>Twitter</span></a></li>
+            </ul>
+        </section>
+        <section class="copyrite">
+            <p>2019 © All rights reserved</p>
+        </section>
+    </footer>
+        
+
+
+    <script>
+            let toggle = document.querySelector(".nav-bar__toggle");
+            let nav_bar = document.querySelector(".nav-bar");
+            
+            toggle.addEventListener("click", function(){
+                if (toggle.className == "nav-bar__toggle") {
+                    toggle.className = "nav-bar__toggle nav-bar__toggle_active";
+                    nav_bar.className = "nav-bar nav-bar_active";
+                } else {
+                    toggle.className = "nav-bar__toggle";
+                    nav_bar.className = "nav-bar";
+                }
+            })
+        </script>
+        
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous">
+        </script>
+        
+        <script>    
+                let logo = document.querySelector(".header");
+                let header = document.querySelector(".banner__info");
+                let social = document.querySelector(".social");
+                console.log(document.documentElement.scrollHeight - social.scrollHeight - 100);
+                
+            
+                window.onscroll = function(){
+                    let x = window.pageYOffset;
+                    console.log(x + "x");
+                    
+                    
+                    if (window.pageYOffset < 500) {
+                        header.style.transform = "translate3d(0,"+ x/5 +"px,0)";
+                        header.style.opacity = 1 - (x/430);
+                    }
+                    if (window.pageYOffset > 60) {
+                        logo.className = "header header_mini";
+                    } else {
+                        logo.className = "header";
+                    }
+                }
+            </script>
+    <!-- Jarallax -->
+<script>
+    $('.jarallax').jarallax({
+        speed: 0.7
+    });
+</script>
+</body>
+</html>

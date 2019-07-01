@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Eternal</title>
+    <style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #474747 url(http://hello-site.ru//main/images/preloads/circles.svg) center center no-repeat;background-size:109px;}</style>
+	<style>
+	.light{font-family:Oxygen,arial,sans-serif;font-weight:300}.reg{font-family:Oxygen,arial,sans-serif;font-weight:400}.bold{font-family:Oxygen,arial,sans-serif;font-weight:700}*{box-sizing:border-box}section#header-top{background-color:#000;height:50px}a:focus,a:hover,a:target,a:visited{text-decoration:none}form{position:relative;width:210px;margin-top:.5em;background:#000;border:2px solid #3e454a}button,input{border:none;outline:0;background:0 0}input{width:100%;height:30px;padding-left:15px;color:#fff}input::-webkit-input-placeholder{opacity:1;transition:opacity .3s ease}input::-moz-placeholder{opacity:1;transition:opacity .3s ease}input:-moz-placeholder{opacity:1;transition:opacity .3s ease}input:-ms-input-placeholder{opacity:1;transition:opacity .3s ease}input:focus::-webkit-input-placeholder{opacity:0;transition:opacity .3s ease}input:focus::-moz-placeholder{opacity:0;transition:opacity .3s ease}input:focus:-moz-placeholder{opacity:0;transition:opacity .3s ease}input:focus:-ms-input-placeholder{opacity:0;transition:opacity .3s ease}.header-top-row button{height:30px;width:42px;position:absolute;top:0;right:0;cursor:pointer}.header-top-row button:before{content:"\f002";font-family:FontAwesome;font-size:14px;color:#85939f}.login ul{float:right;margin-top:1em;list-style:none}.login ul li{display:inline-block;margin:0 2em}.login ul li:last-child{margin-right:0}.login ul li a{font-family:Oxygen,arial,sans-serif;font-weight:300;text-decoration:none;color:#85939f}.login ul li a:hover{color:#bec6cc}.slicknav_menu{display:none}section#header-bot{background-color:#474747}.header-logo{display:inline-block;margin-top:10px}.header-nav-mini{display:none}.header-nav ul{list-style:none;font-size:0;margin-bottom:0}.header-nav ul li{text-align:center;height:75px;display:inline-block}.header-nav ul li:before{content:'';display:block;position:relative;top:0;left:0;height:10px;width:100px;background-color:#ffae00}.header-nav ul li a{display:block;line-height:65px;color:#fff;text-decoration:none;font-family:Oxygen,arial,sans-serif;font-weight:300;text-transform:uppercase;font-size:12px;transition:background-color .3s ease}.header-nav ul li a:hover{transition:all .3s ease;background-color:#000}.header-nav ul .orange:before{background-color:#fc7100}.header-nav ul .pink:before{background-color:#e51c5e}.header-nav ul .purple:before{background-color:#ae0f8d}.header-nav ul .violent:before{background-color:#6d0fae}.header-nav ul .blue:before{background-color:#33227a}.header-nav ul .light-blue:before{background-color:#0c8fcc}section#main{background-color:#000;height:100vh}section#main img{height:100vh}section#main h1{color:#fff;font-family:Oxygen,arial,sans-serif;font-weight:300;font-size:60px;margin-top:15%;text-align:center;z-index:1;text-shadow:1px 1px 2px #000}section#main h1 span{color:#02baab}section#main .main-btn{margin:5% 1% 7%;padding:5px 30px;color:#02baab;border:3px solid #02baab;transition:all .3s ease;display:inline-block;text-transform:uppercase;font-size:12px;font-family:Oxygen,arial,sans-serif;font-weight:700}section#main .main-btn:hover{background-color:#02baab;color:#fff;transition:all .3s ease}section#main .slick-active,section#main .slick-slide{outline:0}section#main .slick-dots li button:before{width:21px;height:4px;color:transparent;background-color:#aaa;opacity:1}section#main .slick-dots li button:hover:before{background-color:#03ecd9;opacity:.5}section#main .slick-dots li.slick-active button:before{color:transparent;background-color:#02baab;opacity:1}section#main .slick-dots{position:relative;bottom:5em}section#main .main-slider.slick-initialized.slick-slider.slick-dotted{height:100vh;margin:0}.main-slider .screen{text-align:center;height:100vh}.main-slider .screen-1{background:url(img/slider-1.jpg) center center no-repeat}.main-slider .screen-2{background:url(img/slider-2.jpg) center center no-repeat}.main-slider .screen-3{background:url(img/slider-3.jpg) center center no-repeat}
+	</style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/  html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body>
+<!-- Preloader -->
+<!-- HelloPreload http://hello-site.ru/preloader/ -->
+
+<div id="hellopreloader"><div id="hellopreloader_preload"></div></div>
+<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.03){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},500);};</script>
+<!-- HelloPreload http://hello-site.ru/preloader/ -->
+<!-- Header top -->
+<section id="header-top">
+	<div class="container">
+		<div class="row header-top-row">
+			<div class="col-xs-12 col-sm-6 col-md-6">
+				<form>
+					<input type="search" placeholder="Search">
+					<button type="submit"></button>
+				</form>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 login">
+				<ul>
+					<li><a href="#"><span class="fa fa-user-circle-o"></span> Login</a></li>
+					<li><a href="#"><span class="fa fa-pencil"></span> Register</a></li>
+				</ul>
+			</div>
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+</section>
+<!-- Header bottom -->
+<section id="header-bot">
+	<div class="container">
+		<div class="row header-bot-row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 logo">
+				<a class="header-logo" href="http://vk.com"><img src="img/logo.png" alt="Amber logo"></a>
+			</div>
+			<div class="col-sm-12 col-md-12 col-lg-8">
+				<div class="header-nav">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li class="orange"><a href="#">Typography</a></li>
+						<li class="pink"><a href="#">Blog</a></li>
+						<li class="purple"><a href="#">Pages</a></li>
+						<li class="violent"><a href="#">Elements</a></li>
+						<li class="blue"><a href="#">Ecommerse</a></li>
+						<li class="light-blue"><a href="#">Mega Menu</a></li>
+					</ul>
+				</div>
+				<div class="header-nav-mini">
+					<ul id="nav-bar">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Typography</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Pages</a></li>
+						<li><a href="#">Elements</a></li>
+						<li><a href="#">Ecommerse</a></li>
+						<li><a href="#">Mega Menu</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Main screen -->
+<section id="main">
+	<div class="main-slider">
+		<div class="screen screen-1">
+			<h1><span>Creating a unique look.</span> <br>Never been easier.</h1>
+			<a class="main-btn features" href="#futures">see features</a>
+			<button type="button" class="main-btn" data-toggle="modal" data-target="#modal-main">purchase now</button>
+		</div>
+		<div class="screen screen-2">
+			<h1><span>Creating a unique look.</span> <br>Never been easier.</h1>
+			<a class="main-btn features" href="#futures">see features</a>
+			<button type="button" class="main-btn" data-toggle="modal" data-target="#modal-main">purchase now</button>
+		</div>
+		<div class="screen screen-3">
+			<h1><span>Creating a unique look.</span> <br>Never been easier.</h1>
+			<a class="main-btn features" href="#futures">see features</a>
+			<button type="button" class="main-btn" data-toggle="modal" data-target="#modal-main">purchase now</button>
+		</div>
+	</div>
+</section>
+<!-- section steal of the month -->
+<section id="month">
+	<div class="container wow fadeIn" data-wow-dutation="0.5s" data-wow-delay="0">
+		<div class="row month-row">
+			<div class="col-xs-12">
+				<h3>Steal of the month</h3>
+				<span class="rectangle"></span>
+				<p>That we can tuck in our children at night and know that they are fed and clothed and safe from harm. Our trials and triumphs became at once unique and universal.</p>
+				<button type="button" data-toggle="modal" data-target="#modal-main">Purchase now</button>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Section with works -->
+<section id="works">
+	<div class="container">
+		<div class="row works-row">
+			<div class="col-xs-12 text-center">
+				<div class="works-text wow fadeIn" data-wow-dutation="1s" data-wow-delay="0">
+					<h3>Latest works</h3>
+					<span class="rectangle"></span>
+					<p>That we can tuck in our children at night and know that they are fed and clothed and safe from harm. Our trials and triumphs became at once unique and universal.</p>
+				</div>
+			</div>
+		</div>
+		<!-- Row with works-slider -->
+		<div class="row">
+			<div class="works-slider">
+				<div class="works-place">
+					<div class="works-slider-item wow fadeInLeft">
+							<img src="img/skarlet.jpg" alt="Skarlet">
+							<div id="works-slider-item-1" class="overlay">
+								<img src="img/icon1.png" alt="1">
+								<img src="img/icon2.png" alt="2">
+								<img src="img/icon3.png" alt="3">
+							</div>
+							<div id="works-slider-info-1" class="works-slider-item-info">
+								<div class="name">
+									<p>Lindemans Wine</p>
+									<p><span class="professia">Art Direction, Web Design</span></p>
+								</div>
+								<div class="likes">
+									<span class="fa fa-heart"></span>
+									<span class="number">256</span>
+								</div>
+							</div>
+						</div> <!-- /slider item -->
+					</div>
+				<div class="works-place">
+					<div class="works-slider-item wow fadeInUp">
+							<img src="img/works-slider-2.jpg" alt="Skarlet">
+							<div id="works-slider-item-2" class="overlay">
+								<img src="img/icon1.png" alt="1">
+								<img src="img/icon2.png" alt="2">
+								<img src="img/icon3.png" alt="3">
+							</div>
+							<div id="works-slider-info-2" class="works-slider-item-info">
+								<div class="name">
+									<p>Lindemans Wine</p>
+									<p><span class="professia">Art Direction, Web Design</span></p>
+								</div>
+								<div class="likes">
+									<span class="fa fa-heart"></span>
+									<span class="number">256</span>
+								</div>
+							</div>
+						</div> <!-- /slider item -->
+					</div>
+				<div class="works-place">
+					<div class="works-slider-item wow fadeInRight">
+							<img src="img/works-slider-3.jpg" alt="Skarlet">
+							<div id="works-slider-item-3" class="overlay">
+								<img src="img/icon1.png" alt="1">
+								<img src="img/icon2.png" alt="2">
+								<img src="img/icon3.png" alt="3">
+							</div>
+							<div id="works-slider-info-3" class="works-slider-item-info">
+								<div class="name">
+									<p>Lindemans Wine</p>
+									<p><span class="professia">Art Direction, Web Design</span></p>
+								</div>
+								<div class="likes">
+									<span class="fa fa-heart"></span>
+									<span class="number">256</span>
+								</div>
+							</div>
+						</div> <!-- /slider item -->
+					</div>
+				<div class="works-place">
+					<div class="works-slider-item">
+							<img src="img/works-slider-4.jpg" alt="Skarlet">
+							<div id="works-slider-item-4" class="overlay">
+								<img src="img/icon1.png" alt="1">
+								<img src="img/icon2.png" alt="2">
+								<img src="img/icon3.png" alt="3">
+							</div>
+							<div id="works-slider-info-4" class="works-slider-item-info">
+								<div class="name">
+									<p>Lindemans Wine</p>
+									<p><span class="professia">Art Direction, Web Design</span></p>
+								</div>
+								<div class="likes">
+									<span class="fa fa-heart"></span>
+									<span class="number">256</span>
+								</div>
+							</div>
+						</div> <!-- /slider item -->
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+<!-- Section purchase -->
+<section id="purchase">
+	<div class="container wow fadeIn">
+		<div class="row purchase-row">
+			<div class="col-md-12">
+				<p>Amber is the most metrolly WordPress theme ever created.</p>
+				<button type="button" data-toggle="modal" data-target="#modal-main">Purchase now <span class="fa fa-angle-right"></span></button>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Section with features -->
+<section id="futures">
+	<div class="container">
+		<div class="row futures-text wow fadeIn">
+			<div class="col-xs-12 text-center">
+				<h3>Superb features</h3>
+				<span class="rectangle"></span>
+			</div>
+		</div>
+		<div class="row futures-row">
+			<div class="col-xs-12 col-md-6 wow fadeInLeft">
+				<div class="col-md-2">
+					<img src="img/Futures/star.png" alt="star">
+				</div>
+				<div class="col-md-10">
+					<h4>Brilliant creative design</h4>
+					<p>Ah, well! It means much the same thing, said the Duchess, digging her  sharp little chin into Alice's shoulder as she added, and the moral  of that is m-dash.</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 wow fadeInLeft">
+				<div class="col-md-2">
+					<img src="img/Futures/cup.png" alt="cup">
+				</div>
+				<div class="col-md-10">
+					<h4>On mouse over title</h4>
+					<p>Then they both bowed low, and their curls got entangled together. Alice laughed so much at this, that she had to run back into the wood for fear of their hearing her.</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 wow fadeInRight">
+				<div class="col-md-2">
+					<img src="img/Futures/stick.png" alt="stick">
+				</div>
+				<div class="col-md-10">
+					<h4>Incredible documentation</h4>
+					<p>Alice went timidly up to the door, and knocked. 'There's no sort of use in knocking,' said the Footman, 'and that for two reasons.</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 wow fadeInRight">
+				<div class="col-md-2">
+					<img src="img/Futures/cloud.png" alt="cloud">
+				</div>
+				<div class="col-md-10">
+					<h4>Responsive & retina ready</h4>
+					<p> Alice went timidly up to the door, and knocked. 'There's no sort of use in knocking,' said the Footman, 'and that for two reasons. First, because I'm on the same side.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Section with quots -->
+<section id="quots">
+	<div class="container wow fadeIn">
+		<div class="row">
+			<div class="quots-slider">
+				<div class="quots-slider-item text-center">
+					<p>Thereby, the whale commanders are enabled to recognise each <br> other upon the ocean, even at considerable distances <br> and with no small facility.</p>
+					<p><span>— Moby-Dick, Herman Melville</span></p>
+				</div>
+				<div class="quots-slider-item text-center">
+					<p>Thereby, the whale commanders are enabled to recognise each <br> other upon the ocean, even at considerable distances <br> and with no small facility.</p>
+					<p><span>— Moby-Dick, Herman Melville</span></p>
+				</div>
+				<div class="quots-slider-item text-center">
+					<p>Thereby, the whale commanders are enabled to recognise each <br> other upon the ocean, even at considerable distances <br> and with no small facility.</p>
+					<p><span>— Moby-Dick, Herman Melville</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Section blog -->
+<section id="blog">
+	<div class="container">
+		<div class="row blog-text wow fadeIn">
+			<div class="col-xs-12">
+				<h3>Latest blog posts</h3>
+				<span class="rectangle"></span>
+			</div>
+		</div>
+		<div class="row blog-row wow fadeIn">
+			<div class="col-xs-12 col-md-4">
+				<div class="blog-item">
+					<img class="img-responsive" src="img/Blog/Blog-1.jpg" alt="Nice girl">
+					<a class="headline" href="#">Runway to Red Carpet: <br> Awards Season</a>
+					<p>Her father worked on oil rigs and farms that <br> through most of the Depression. But it is a new <br> story that has seared into my genetic.</p>
+					<a href="#">Learn more</a>
+					<p class="comments"><span class="fa fa-comments"></span>450</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="blog-item">
+					<img class="img-responsive" src="img/Blog/Blog-2.jpg" alt="Nice girl">
+					<a class="headline" href="#">Runway to Red Carpet: <br> Awards Season</a>
+					<p>Her father worked on oil rigs and farms that <br> through most of the Depression. But it is a new <br> story that has seared into my genetic.</p>
+					<a href="#">Learn more</a>
+					<p class="comments"><span class="fa fa-comments"></span>450</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="blog-item">
+					<img class="img-responsive" src="img/Blog/Blog-3.jpg" alt="Nice girl">
+					<a class="headline" href="#">Runway to Red Carpet: <br> Awards Season</a>
+					<p>Her father worked on oil rigs and farms that <br> through most of the Depression. But it is a new <br> story that has seared into my genetic.</p>
+					<a href="#">Learn more</a>
+					<p class="comments"><span class="fa fa-comments"></span>450</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Section expirience -->
+<section id="expirience">
+	<div class="container wow fadeIn">
+	<div class="row expirience-text">
+		<div class="col-xs-12">
+			<h3>Company expirience</h3>
+			<span class="rectangle"></span>
+		</div>
+	</div>
+		<div class="row expirience-row">
+		<!-- Первая окружность -->
+			<div class="expirience-block">
+				<div id="circle-1" class="circle">
+					<img src="img/expirience/circle-1.png" alt="cogs">
+				</div>
+				<h4>500</h4>
+				<p>years of web development</p>
+			</div>
+			<!-- Точки между окружностями -->
+			<div class="expirience-dots">
+				<div class="dot"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+			</div>
+			<!-- Вторая окружность -->
+			<div class="expirience-block">
+				<div id="circle-2" class="circle">
+					<img src="img/expirience/circle-2.png" alt="cogs">
+				</div>
+				<h4>25 000</h4>
+				<p>results of the last <br>winter year </p>
+			</div>
+			<!-- Точки между окружностями -->
+			<div class="expirience-dots">
+				<div class="dot"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+			</div>
+			<!-- Третья окружность -->
+			<div class="expirience-block">
+				<div id="circle-3" class="circle">
+					<img src="img/expirience/circle-3.png" alt="cogs">
+				</div>
+				<h4>100 000</h4>
+				<p>euros of the military <br>budget </p>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="team">
+	<div class="container wow fadeIn">
+		<div class="row team-text">
+			<div class="col-xs-12">
+				<h3>Our team</h3>
+				<span class="rectangle"></span>
+			</div>
+		</div>
+		<div class="row team-row">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-0">
+				<div class="team-block">
+					<img class="center-block img-responsive" src="img/team/team-1.jpg" alt="Nicolas Cage">
+					<div class="profile">
+						<button id="profile-1">Profile</button>
+					</div>
+					<div hidden id="div-profile-hidden-1" class="profile-hidden">
+						<div class="profile-hidden-name">
+							<h5>Eminem</h5>
+							<p>Rapper</p>
+						</div>
+						<p class="team-quot">I say what I want to say and do what I want to do. There's no in between. People will either love you for it or hate you for it.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-3 col-md-offset-0">
+				<div class="team-block">
+					<img class="center-block img-responsive" src="img/team/team-2.jpg" alt="Nicolas Cage">
+					<div class="profile">
+						<button id="profile-2">Profile</button>
+					</div>
+					<div hidden id="div-profile-hidden-2" class="profile-hidden">
+						<div class="profile-hidden-name">
+							<h5>David Tennant </h5>
+							<p>Actor</p>
+						</div>
+						<p class="team-quot">I'm a good person, I hope. But I'm never as good as I want to be, never as nice as I want to be, never as generous as I want to be.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-0">
+				<div class="team-block">
+					<img class="center-block img-responsive" src="img/team/team-3.jpg" alt="Nicolas Cage">
+					<div class="profile">
+						<button id="profile-3">Profile</button>
+					</div>
+					<div hidden id="div-profile-hidden-3" class="profile-hidden">
+						<div class="profile-hidden-name">
+							<h5>Kendrick Lamar</h5>
+							<p>Rapper</p>
+						</div>
+						<p class="team-quot">My whole thing is to inspire, to better people, to better myself forever in this thing that we call rap, this thing that we call hip hop.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-3 col-md-offset-0">
+				<div class="team-block">
+					<img class="center-block img-responsive" src="img/team/team-4.jpg" alt="Nicolas Cage">
+					<div class="profile">
+						<button id="profile-4">Profile</button>
+					</div>
+					<div hidden id="div-profile-hidden-4" class="profile-hidden">
+						<div class="profile-hidden-name">
+							<h5>Carla Ossa</h5>
+							<p>Model</p>
+						</div>
+						<p class="team-quot">Be who you are and say what you feel, because those who mind don't matter.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="container">
+	<div class="col-xs-3 footer-color-1"></div>
+	<div class="col-xs-3 footer-color-2"></div>
+	<div class="col-xs-3 footer-color-3"></div>
+	<div class="col-xs-3 footer-color-4"></div>
+		<div class="row footer-row">
+			<div class="col-md-3 get">
+				<h4>Get in touch</h4>
+				<p><span class="fa fa-flag"></span> <b>Addres:</b> 321 Street Name, <br> United Kingdom, London </p>
+				<p><span class="fa fa-phone"></span> <b>Phone: </b><a href="tel:+7998711503020">+7-998-71-150-30-20</a></p>
+				<p><span class="fa fa-envelope"></span> <b>Email: </b>info@ambertheme.com</p>
+				<div class="yandex-map">
+					<a href="https://yandex.ru/maps/?um=constructor%3Ab419aef50f85f681e377a4cbaa7381775b4a72b20b46adab2b094b557688c896&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Ab419aef50f85f681e377a4cbaa7381775b4a72b20b46adab2b094b557688c896&amp;width=210&amp;height=150&amp;lang=ru_RU" alt="" style="border: 0;" /></a>
+				</div>
+			</div>
+			<div class="col-md-3 twit">
+				<h4>Latest tweets</h4>
+				<div class="tweet">
+					<p><span class="fa fa-twitter"></span>CMS Masters And Their Best Web Design Tools <span class="link">#bestwebdesigntools #webdesign</span> <br> <span class="time">— about 12 min ago</span></p>
+				</div>
+				<div class="tweet">
+					<p><span class="fa fa-twitter"></span>OOCOMMERCE functionality added!!! See Industrial theme become even powerful! - <span class="link"> bit.ly/industrial-wp</span> <br> <span class="time">— about 47 days ago</span></p>
+				</div>
+				<div class="tweet">
+					<p><span class="fa fa-twitter"></span>CMS Masters And Their Best Web Design Tools <span class="link">#bestwebdesigntools #webdesign</span> <br> <span class="time">— about 12 min ago</span></p>
+				</div>
+			</div>
+			<div class="col-md-3 social">
+				<h4>Follow us</h4>
+				<div class="flex">
+					<div class="social-item fb">
+						<a href="http://Facebook.com" target = "_blank"><img src="img/social/fb.jpg" alt="Facebook"></a>
+						<p>Like us Facebook</p>
+					</div>
+					<div class="social-item twitter">
+						<a href="http://twitter.com" target = "_blank"><img src="img/social/tw.jpg" alt="Twitter"></a>
+						<p>Follow us Twitter</p>
+					</div>
+					<div class="social-item tube">
+						<a href="http://youtube.com" target = "_blank"><img src="img/social/utube.jpg" alt="YouTube"></a>
+						<p>Watch videos on YouTube</p>
+					</div>
+					<div class="social-item inst">
+						<a href="http://instagram.com" target = "_blank"><img src="img/social/inst.jpg" alt="Instagram"></a>
+						<p>Friend us on Instagram</p>
+					</div>
+					<div class="social-item pint">
+						<a href="http://pinterest.com" target = "_blank"><img src="img/social/pint.jpg" alt="Pinterest"></a>
+						<p>Repin on Pinterest</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 posts">
+				<h4>Popular posts</h4>
+				<p>September, 30 <br> <span>Candy canes dragée pudding. Donut cheesecake I love chocolate icing</span></p>
+				<p>April, 22 <br> <span>Muffin croissant cookie sesame snaps. Ice cream donut cookie gingerbread</span></p>
+				<p>May, 12 <br> <span>Cotton candy muffin tart gummies candy danish liquorice chupa chups tootsie roll</span></p>
+			</div>
+		</div>
+		<div class="row footer-bot">
+			<div class="col-xs-12 col-sm-6">
+				<p>© 2014 StylemixThemes. All rights reserved. <br>Powered by WordPress.</p>
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<a class="big-screen" href="#main">Back to top of page <span class="fa fa-angle-up"></span></a>
+				<a class="small-screen" href="#main"><span class="fa fa-angle-up"></span></a>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Modal -->
+<div class="modal fade bs-example-modal-sm" id="modal-main" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Оставьте свои данные</h4>
+      </div>
+      <div class="modal-body">
+         <form id="main-form-ajax" action="#">
+	    	<input type="hidden" name="from" value="Main form">
+	        <input id="username" type="text" name="username" placeholder="Your Name">
+	        <input id="email" type="email" name="email" placeholder="Your Email">
+	        <input id="phone" type="tel" name="phone" placeholder="Your phone">
+	        <textarea placeholder="Your Message" name="user_message" rows="3"></textarea>
+	        <button id="submit-form" class="main-form-btn" type="submit">Отправить</button>
+	    </form>
+	    <div id="placeForText"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+	 <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+    	new WOW().init();
+    </script>
+	<!-- Nav-bar -->
+		<script>
+			$(function(){
+				$('#nav-bar').slicknav();
+			});
+	</script>
+
+	<!-- Main slider -->
+	<script>
+				$(document).ready(function(){
+		  $('.main-slider').slick({
+		    autoplay: true,
+			autoplaySpeed: 5000,
+			arrows: false,
+			dots: true,
+			pauseOnHover: false,
+			pauseOnFocus: false,
+			speed: 1500,
+		  });
+		});
+	</script>
+	<!-- Slider with works -->
+	<script>
+		$(document).ready(function(){
+		  $('.works-slider').slick({
+		  	infinite: true,
+			slidesToShow: 3,
+			slidesToScroll: 3,
+			arrows: true,
+			speed: 1500,
+			prevArrow: '<i class="fa works-slider-arrows arrow-left fa-chevron-left"></i>',
+			nextArrow: '<i class="fa works-slider-arrows arrow-right fa-chevron-right"></i>',
+			 responsive: [
+			    {
+			      breakpoint: 1024,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 1,
+			        infinite: true,
+			        arrows: true
+			      }
+			    },
+			    {
+			      breakpoint: 600,
+			      settings: {
+			        slidesToShow: 1,
+			        slidesToScroll: 1,
+			        infinite: true,
+			        arrows: true
+			      }
+			    }
+			    // You can unslick at a given breakpoint now by adding:
+			    // settings: "unslick"
+			    // instead of a settings object
+			  ]
+		  });
+		});
+	</script>
+
+	<!-- Отправка на почту -->
+<script>
+$(document).ready(function() {
+
+$("#main-form-ajax").submit(function() {
+	$.ajax({
+		type: "POST",
+		url: "smart.php",
+		data: $(this).serialize()
+	}).done(function() {
+		$(this).find("input").val("");
+         document.getElementById('placeForText').innerHTML='Сообщение отправлено!';
+         document.getElementById("placeForText").style.color="#00ff00";
+		$("#main-form-ajax").trigger("reset");
+	});
+	return false;
+});
+});
+</script>
+
+	
+
+
+<!-- Подключение маски -->
+	<script src="js/jquery.maskedinput.min.js" type="text/JavaScript"></script>
+<!-- Настройка маски -->
+	<script>
+		jQuery(function($) {
+			$('#phone').mask("+7-(999)-999-99-99");
+		})
+	</script>
+	<script>
+		$(document).ready(function() {
+			$('#submit-form').click(function() {
+				if ($('#username').val() !== '') {
+					$('#main-form-ajax').submit();
+				}
+				else {
+					alert('Вы не заполнили поле имя');
+				}
+			})
+			$('#submit-form').click(function() {
+				if ($('#email').val() !== '') {
+					$('#main-form-ajax').submit();
+				}
+				else {
+					alert('Вы не заполнили поле email');
+				}
+		})
+	})
+	</script>
+
+
+
+
+	<!-- Скрытие works-info при hover -->
+	<script>
+		 $("#works-slider-item-1").mouseout(function(e){
+	 $("#works-slider-info-1").css("opacity", "1");
+	});
+
+	$("#works-slider-item-1").mousemove(function(e){
+	 $("#works-slider-info-1").css("opacity", "0");
+
+	});
+	</script>
+	<script>
+		 $("#works-slider-item-2").mouseout(function(e){
+	 $("#works-slider-info-2").css("opacity", "1");
+	});
+
+	$("#works-slider-item-2").mousemove(function(e){
+	 $("#works-slider-info-2").css("opacity", "0");
+
+	});
+	</script>
+	<script>
+		 $("#works-slider-item-3").mouseout(function(e){
+	 $("#works-slider-info-3").css("opacity", "1");
+	});
+
+	$("#works-slider-item-3").mousemove(function(e){
+	 $("#works-slider-info-3").css("opacity", "0");
+	});
+	</script>
+	<script>
+		 $("#works-slider-item-4").mouseout(function(e){
+	 $("#works-slider-info-4").css("opacity", "1");
+	});
+
+	$("#works-slider-item-4").mousemove(function(e){
+	 $("#works-slider-info-4").css("opacity", "0");
+	});
+	</script>
+	<!-- Quots slider -->
+	<script>
+				$(document).ready(function(){
+		  $('.quots-slider').slick({
+		    autoplay: true,
+			autoplaySpeed: 5000,
+			arrows: false,
+			dots: true,
+			pauseOnHover: false,
+			pauseOnFocus: false,
+			speed: 1500,
+		  });
+		});
+	</script>
+	<script src="js/circle-progress.min.js"></script>
+	<!-- Circles  -->
+<script>
+  $('#circle-1').circleProgress({
+    value: 0.8,
+    size: 200,
+    thickness: 5,
+    emptyFill: "rgba(255, 255, 255, .2)",
+    reverse: false,
+    fill: {
+      color: "white"
+    }
+  });
+</script>
+<script>
+  $('#circle-2').circleProgress({
+	    value: 0.65,
+	    size: 200,
+	    thickness: 5,
+	    emptyFill: "rgba(255, 255, 255, .2)",
+	    reverse: false,
+	    fill: {
+	      color: "white"
+	    }
+	  });
+</script>
+<script>
+  $('#circle-3').circleProgress({
+    value: 0.92,
+    size: 200,
+    thickness: 5,
+    emptyFill: "rgba(255, 255, 255, .2)",
+    reverse: false,
+    fill: {
+      color: "white"
+    }
+  });
+</script>
+
+
+<!-- Блок профаил в our team -->
+<script>
+	$("#profile-1").click(function(e) {
+  $('#div-profile-hidden-1').toggle();
+  e.stopPropagation();
+});
+$('#div-profile-hidden-1').click(function(e) {
+  e.stopPropagation();
+});
+$(document).click(function() {
+  $('#div-profile-hidden-1').hide();
+});
+</script>
+
+<script>
+	$("#profile-2").click(function(e) {
+  $('#div-profile-hidden-2').toggle();
+  e.stopPropagation();
+});
+$('#div-profile-hidden-2').click(function(e) {
+  e.stopPropagation();
+});
+$(document).click(function() {
+  $('#div-profile-hidden-2').hide();
+});
+</script>
+
+<script>
+	$("#profile-3").click(function(e) {
+  $('#div-profile-hidden-3').toggle();
+  e.stopPropagation();
+});
+$('#div-profile-hidden-3').click(function(e) {
+  e.stopPropagation();
+});
+$(document).click(function() {
+  $('#div-profile-hidden-3').hide();
+});
+</script>
+
+<script>
+	$("#profile-4").click(function(e) {
+  $('#div-profile-hidden-4').toggle();
+  e.stopPropagation();
+});
+$('#div-profile-hidden-4').click(function(e) {
+  e.stopPropagation();
+});
+$(document).click(function() {
+  $('#div-profile-hidden-4').hide();
+});
+</script>
+
+<!-- Скрипт для плавного перехода -->
+<script>
+	$("body").on('click', '[href*="#"]', function(e){
+	  var fixed_offset = 100;
+	  $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+	  e.preventDefault();
+	});
+</script>
+
+</body>
+</html>

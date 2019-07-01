@@ -1,0 +1,61 @@
+.main-footer {
+    // background: url("../../app/img/footer_bg.jpg") center center no-repeat;
+    background-size: cover;
+    .social {
+        text-align: center;
+        padding: 1px;
+        h2 {
+            margin-top: 40px;
+            font-size: 32px;
+        }
+        .social-list {
+            display: flex;
+            padding: 0;
+            margin: 75px 0 100px;
+            justify-content: center;
+            list-style: none;
+            li {
+                position: relative;
+                width: 100px;
+                height: 100px;
+                background-color: transparentize($bgblue, 0.5);
+                margin: 0 30px;
+                a::after {
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                span {
+                    position: absolute;
+                    top: 110%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            li:nth-child(1) a::after {
+                background-image: url("../img/icons/vk.svg");
+            }
+            li:nth-child(2) a::after {
+                background-image: url("../img/icons/youtube.svg");
+            }
+            li:nth-child(3) a::after {
+                background-image: url("../img/icons/instagram.svg");
+                width: 40px;
+                height: 40px;
+            }
+            li:nth-child(4) a::after {
+                background-image: url("../img/icons/twitter.svg");
+            }
+        }
+    }
+    .copyrite {
+        background-color: transparentize($bgblue, 0.5);
+        text-align: center;
+        padding: 20px 0;
+    }
+}
