@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Барбершоп - «Бородинский»</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+    <header class="page-header">
+        <a class="page-header__logo">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="./img/logotype-desktop.svg">
+                <source media="(min-width: 768px)" srcset="./img/logotype-tablet.svg">
+                <img width="370" height="150" class="page-header__logo-image" src="./img/logotype-mobile.svg"
+                    alt="Барбершоп «Бородинский»">
+            </picture>
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item site-list__item--active">
+                        <a class="site-list__link">Главная</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a class="site-list__link" href="portfolio.html">Наши работы</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a class="site-list__link" href="registration.html">Записаться</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a class="site-list__link" href="store.html">Магазин</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a class="site-list__link" href="price.html">Прайс-лист</a>
+                    </li>
+                </ul>
+                <ul class="user-list">
+                    <li class="user-list__item">
+                        <a class="user-list__login" href="#">Войти</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-main">
+        <h1 class="visually-hidden">Барбершоп «Бородинский» – истинно мужская классика</h1>
+        <section class="stats">
+            <div class="stats__wrapper">
+                <header class="stats__header">
+                    <h2 class="visually-hidden">Статистика Барбершопа</h2>
+                    <b class="stats__title">Стрижка у нас<br>это выгодно!</b>
+                    <p class="stats__text">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+                    <small class="stats__legend stats__legend--top">
+                        <sup class="stats__footnote">*</sup> - приведенные данные ложь
+                    </small>
+                </header>
+                <table class="stats__list">
+                    <tbody>
+                        <tr>
+                            <td class="stats__value">1 500 <sup>*</sup></td>
+                            <td class="stats__field">рублей<br> вложений</td>
+                        </tr>
+                        <tr>
+                            <td class="stats__value">7 200</td>
+                            <td class="stats__field">секунд<br> времени мастера</td>
+                        </tr>
+                        <tr>
+                            <td class="stats__value">90 000</td>
+                            <td class="stats__field">постриженных<br> волос</td>
+                        </tr>
+                        <tr>
+                            <td class="stats__value">500 000 <sup>*</sup></td>
+                            <td class="stats__field">лайков и<br> комплиментов</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <small class="stats__legend stats__legend--bottom">
+                    <sup class="stats__footnote">*</sup> - приведенные данные ложь
+                </small>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="container">
+                <h2 class="visually-hidden">Наши преимущества</h2>
+                <ul class="owl-carousel advantages__list">
+                    <li class="advantages__item">
+                        <img class="advantages__image" src="./img/fast-icon.svg" alt="Работаем быстро" width="95"
+                            height="94">
+                        <div class="advantages__wrapper-text">
+                            <h3 class="advantages__title">Быстро</h3>
+                            <p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно
+                                и Вы - счастливый обладатель стильной стрижки-минутки</p>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <img class="advantages__image" src="./img/cool-icon.svg" alt="Срегем круто" width="95"
+                            height="88">
+                        <div class="advantages__wrapper-text">
+                            <h3 class="advantages__title">Круто</h3>
+                            <p class="advantages__description">Забудьте, как вы стриглись раньше. Мы сделаем из вас
+                                звезду футбола или кино. Во всяком случае внешне.</p>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <img class="advantages__image" src="./img/price-icon.svg" alt="Работаем дорого" width="95"
+                            height="91">
+                        <div class="advantages__wrapper-text">
+                            <h3 class="advantages__title">Дорого</h3>
+                            <p class="advantages__description">Наши мастера - профессионалы своего дела и не могут
+                                стоить дешёво. К тому же, разве цена не даёт определенный статус?</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="news">
+            <div class="news__wrapper container">
+                <h2 class="news__title">Новости и акции</h2>
+                <ul class="news__list">
+                    <li class="news__item">
+                        <time class="news__date" datetime="2019-09-29">
+                            <b class="news__day">29</b> сент
+                        </time>
+                        <p class="news__text">Нам наконец завезли Ягермейстер! Теперь вы можете пропустить стаканчик во
+                            время стрижки.</p>
+                    </li>
+                    <li class="news__item">
+                        <time class="news__date" datetime="2019-09-19">
+                            <b class="news__day">19</b> сент
+                        </time>
+                        <p class="news__text">В нашей команде пополнение, Борис "Бритва" Стригунец, пополнил наши стройные ряды. Спешите записаться!</p>
+                    </li>
+                    <li class="news__item">
+                        <time class="news__date" datetime="2019-09-09">
+                            <b class="news__day">9</b> сент
+                        </time>
+                        <p class="news__text">Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и
+                            узнаете, в чем здесь подвох!</p>
+                    </li>
+                </ul>
+                <a class="news__to-all button" href="#">Показать все</a>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="reviews__wrapper container">
+                <h2 class="reviews__title">Отзывы о нас</h2>
+                <a class="reviews__set-feedback button" href="#">Оставить свой</a>
+
+                <div class="owl-carousel reviews__list">
+                    <blockquote class="reviews__item">
+                        <p class="reviews__author-picture">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./img/user-image-big.jpg 1x, ./img/user-image-big@2x.jpg 2x">
+                                <source media="(min-width: 768px)"
+                                    srcset="./img/user-image-tablet.jpg 1x, ./img/user-image-tablet@2x.jpg 2x">
+                                <img class="reviews__author-image" src="./img/user-image-mobile.jpg"
+                                    srcset="./img/user-image-mobile@2x.jpg 2x" alt="Фото Трэвис Баркера">
+                            </picture>
+                        </p>
+                        <div class="reviews__wrapper-text">
+                            <cite class="reviews__author-name">Трэвис Баркер</cite>
+                            <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться,
+                                чтобы было видно новую татуировку!</p>
+                        </div>
+                    </blockquote>
+                    <blockquote class="reviews__item">
+                        <p class="reviews__author-picture">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./img/user-image-big.jpg 1x, ./img/user-image-big@2x.jpg 2x">
+                                <source media="(min-width: 768px)"
+                                    srcset="./img/user-image-tablet.jpg 1x, ./img/user-image-tablet@2x.jpg 2x">
+                                <img class="reviews__author-image" src="./img/user-image-mobile.jpg"
+                                    srcset="./img/user-image-mobile@2x.jpg 2x" alt="Фото Трэвис Баркера">
+                            </picture>
+                        </p>
+                        <div class="reviews__wrapper-text">
+                            <cite class="reviews__author-name">Трэвис Баркер</cite>
+                            <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться,
+                                чтобы было видно новую татуировку!</p>
+                        </div>
+                    </blockquote>
+                    <blockquote class="reviews__item">
+                        <p class="reviews__author-picture">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./img/user-image-big.jpg 1x, ./img/user-image-big@2x.jpg 2x">
+                                <source media="(min-width: 768px)"
+                                    srcset="./img/user-image-tablet.jpg 1x, ./img/user-image-tablet@2x.jpg 2x">
+                                <img class="reviews__author-image" src="./img/user-image-mobile.jpg"
+                                    srcset="./img/user-image-mobile@2x.jpg 2x" alt="Фото Трэвис Баркера">
+                            </picture>
+                        </p>
+                        <div class="reviews__wrapper-text">
+                            <cite class="reviews__author-name">Трэвис Баркер</cite>
+                            <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться,
+                                чтобы было видно новую татуировку!</p>
+                        </div>
+                    </blockquote>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="page-footer__wrapper container">
+            <div class="page-footer__contacts contacts">
+                <b class="contacts__name">Барбершоп Бородинский</b>
+                <p class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+                <a class="contacts__tel" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </div>
+            <div class="page-footer__social social">
+                <p class="social__slogan">Давайте дружить!</p>
+                <ul class="social__list">
+                    <li class="social__item"><a class="social__link social__link--vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+                    <li class="social__item"><a class="social__link social__link--fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+                    <li class="social__item"><a class="social__link social__link--inst" href="#"><span class="visually-hidden">Инстаграмм</span></a></li>
+                </ul>
+            </div>
+            <div class="page-footer__copyright copyright">
+                <b class="copyright__text">Разработано:</b>
+                <a class="copyright__link button" href="#">Ильченко Владислав</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="login-popup">
+        <h2 class="login-popup__title">Личный кабинет</h2>
+        <p class="login-popup__subtitle">Введите свой логин и пароль, чтобы войти</p>
+        <form class="login-popup__form" action="" method="POST">
+            <label class="login-popup__label login-popup__label--login">
+                Логин
+                <input class="login-popup__login" type="text" placeholder="Логин">
+            </label>
+            <label class="login-popup__label login-popup__label--password">
+                Пароль
+                <input class="login-popup__password" type="password" placeholder="Пароль">
+            </label>
+            <div class="login-popup__wrapper">
+                <label class="login-popup__remember">
+                    <input class="login-popup__checkbox" type="checkbox">
+                    Запомните меня
+                </label>
+                <a class="login-popup__foggot" href="#">Я забыл пароль!</a>
+            </div>
+            <button class="login-popup__submit button" type="submit">Войти в личный кабинет</button>
+        </form>
+        <button class="login-popup__close button" type="button">Закрыть форму</button>
+    </div>
+    
+    <script src="js/main.js"></script>
+
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script>
+        $(window).on("load", () => {
+            if ($(this).width() > 767) {
+                $(".advantages__list").trigger('destroy.owl.carousel');
+            } else {
+                $(".advantages__list").owlCarousel({
+                    items: 1,
+                    dotsClass: "advantages__dots",
+                    dotClass: "advantages__dot"
+                });
+            }
+        });
+
+        $(document).ready(() => {
+            $(".reviews__list").owlCarousel({
+                items: 1,
+                nav: true,
+                navClass: ["reviews__prev", "reviews__next"],
+                dotsClass: "reviews__dots",
+                dotClass: "reviews__dot"
+            });
+        });
+    </script>
+
+</body>
+
+</html>

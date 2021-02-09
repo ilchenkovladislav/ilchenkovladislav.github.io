@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин - Барбершоп</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="page-header angle-header">
+        <a class="page-header__logo">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="./img/logotype-desktop.svg">
+                <source media="(min-width: 768px)" srcset="./img/logotype-tablet.svg">
+                <img width="370" height="150" class="page-header__logo-image" src="./img/logotype-mobile.svg" alt="Барбершоп «Бородинский»">
+            </picture>
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item">
+                        <a class="site-list__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a class="site-list__link" href="portfolio.html">Наши работы</a>
+                    </li>
+                    <li class="site-list__item ">
+                        <a class="site-list__link" href="registration.html">Записаться</a>
+                    </li>
+                    <li class="site-list__item site-list__item--active">
+                        <a class="site-list__link">Магазин</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a class="site-list__link" href="price.html">Прайс-лист</a>
+                    </li>
+                </ul>
+                <ul class="user-list">
+                    <li class="user-list__item">
+                        <a class="user-list__login" href="#">Войти</a>
+                    </li>
+                </ul>
+            </div>    
+        </nav>
+    </header>
+
+    <main class="page-main">
+        <section class="store">
+            <div class="container">
+                <h1 class="store__title">Средства для ухода</h1>
+                <div class="store__top-wrapper">
+                    <div class="store__breadcrumbs breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+                            <li class="breadcrumbs__item"><a class="breadcrumbs__link">Магазин</a></li>
+                        </ul>
+                    </div>
+                    <button class="button store__filter-btn">Фильтры</button>
+                </div>
+                <div class="store__grid">
+                    <div class="filter">
+                        <form action="#" method="get">
+                            <div class="filter__control-wrapper">
+                                <button class="filter__reset" type="reset">Очистить</button>
+                                <button class="filter__close"><span class="visually-hidden">Закрыть</span></button>
+                            </div>
+                            <fieldset class="filter__widget">
+                                <legend class="filter__legend filter__legend--opened">Производители</legend>
+                                <div class="filter__widget-wrapper">
+                                    <label class="check">
+                                        <input class="check__input" disabled type="checkbox" name="producer" value="Baxter of California">
+                                        <span class="check__box"></span>
+                                        Baxter of California
+                                    </label>
+                                    <label class="check">
+                                        <input class="check__input" type="checkbox" name="producer" value="Mr Natty">
+                                        <span class="check__box"></span>
+                                        Mr Natty
+                                    </label>
+                                    <label class="check">
+                                        <input class="check__input" type="checkbox" name="producer" value="Suavecito">
+                                        <span class="check__box"></span>
+                                        Suavecito
+                                    </label>
+                                    <label class="check">
+                                        <input class="check__input" disabled checked type="checkbox" name="producer" value="Malin+Goetz">
+                                        <span class="check__box"></span>
+                                        Malin+Goetz
+                                    </label>
+                                    <label class="check">
+                                        <input class="check__input" type="checkbox" name="producer" value="Murray’s">
+                                        <span class="check__box"></span>
+                                        Murray’s
+                                    </label>
+                                    <label class="check">
+                                        <input class="check__input" type="checkbox" name="producer" value="American Crew">
+                                        <span class="check__box"></span>
+                                        American Crew
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <fieldset class="filter__widget filter__widget--opened">
+                                <legend class="filter__legend">Группы товаров</legend>
+                                <div class="filter__widget-wrapper">
+                                    <label class="radio">
+                                        <input class="radio__input" type="radio" name="products" value="razors">
+                                        <span class="radio__box"></span>
+                                        Бритвенные<br>принадлежности
+                                    </label>
+                                    <label class="radio">
+                                        <input class="radio__input" disabled type="radio" name="products" value="care-products">
+                                        <span class="radio__box"></span>
+                                        Средства для ухода
+                                    </label>
+                                    <label class="radio">
+                                        <input class="radio__input" disabled checked type="radio" name="products" value="accessories">
+                                        <span class="radio__box"></span>
+                                        Аксессуары
+                                    </label>
+                                </div>
+                            </fieldset>
+    
+                            <button class="button filter__submit" type="submit">Показать</button>
+                        </form>
+                    </div>
+                    <div class="products">
+                        <ul class="products__list">
+                            <li class="products__item">
+                                <a class="products__link" href="product.html">
+                                    <img class="products__img" src="img/product-1.jpg" alt="#" width="220" height="165">
+                                </a>
+                                <div class="products__info">
+                                        <a class="products__link" href="product.html">
+                                            <h3 class="products__title">Набор для путешествий «Baxter of California»</h3>
+                                        </a>
+                                        <div class="price-buy products__price-buy">
+                                            <p class="price-buy__price products__price">2 900р</p>
+                                            <button class="button price-buy__btn">Купить</button>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li class="products__item">
+                                <img class="products__img" src="img/product-2.jpg" alt="#" width="220" height="165">
+                                <div class="products__info">
+                                    <h3 class="products__title">Увлажняющий кондиционер «Baxter of California»</h3>
+                                    <div class="price-buy products__price-buy">
+                                        <p class="price-buy__price products__price">2 900р</p>
+                                        <button class="button price-buy__btn">Купить</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="products__item">
+                                <img class="products__img" src="img/product-3.jpg" alt="#" width="220" height="165">
+                                <div class="products__info">
+                                    <h3 class="products__title">Гель для волос «SUAVECITO»</h3>
+                                    <div class="price-buy products__price-buy">
+                                        <p class="price-buy__price products__price">2 900р</p>
+                                        <button class="button price-buy__btn">Купить</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="products__item">
+                                <img class="products__img" src="img/product-4.jpg" alt="#" width="220" height="165">
+                                <div class="products__info">
+                                    <h3 class="products__title">Глина для укладки волос «American crew»</h3>
+                                    <div class="price-buy products__price-buy">
+                                        <p class="price-buy__price products__price">2 900р</p>
+                                        <button class="button price-buy__btn">Купить</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="products__pagination pagination">
+                            <ul class="products__page-list pagination__list">
+                                <li class="pagination__item pagination__item--current"><a class="pagination__link">1</a></li>
+                                <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+                                <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="page-footer__wrapper container">
+            <div class="page-footer__contacts contacts">
+                <b class="contacts__name">Барбершоп Бородинский</b>
+                <p class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+                <a class="contacts__tel" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </div>
+            <div class="page-footer__social social">
+                <p class="social__slogan">Давайте дружить!</p>
+                <ul class="social__list">
+                    <li class="social__item"><a class="social__link social__link--vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+                    <li class="social__item"><a class="social__link social__link--fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+                    <li class="social__item"><a class="social__link social__link--inst" href="#"><span class="visually-hidden">Инстаграмм</span></a></li>
+                </ul>
+            </div>
+            <div class="page-footer__copyright copyright">
+                <b class="copyright__text">Разработано:</b>
+                <a class="copyright__link button" href="#">Ильченко Владислав</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="login-popup">
+        <h2 class="login-popup__title">Личный кабинет</h2>
+        <p class="login-popup__subtitle">Введите свой логин и пароль, чтобы войти</p>
+        <form action="">
+            <label class="login-popup__label">
+                Логин
+                <input class="login-popup__login" type="text" placeholder="Логин">
+            </label>
+            <label class="login-popup__label">
+                Пароль
+                <input class="login-popup__password" type="password" placeholder="Пароль">
+            </label>
+            <div class="login-popup__wrapper">
+                <label class="login-popup__remember">
+                    <input class="login-popup__checkbox" type="checkbox">
+                    Запомните меня
+                </label>
+                <a class="login-popup__foggot" href="#">Я забыл пароль!</a>
+            </div>
+            <button class="login-popup__submit button" type="submit">Войти в личный кабинет</button>
+        </form>
+        <button class="login-popup__close button">Закрыть форму</button>
+    </div>
+
+    <script>
+        let filterBtn = document.querySelector(".store__filter-btn");
+        let filter = document.querySelector(".filter");
+
+        let closeBtn = document.querySelector(".filter__close");
+
+        filterBtn.addEventListener("click", () => {
+            filter.classList.toggle("filter--opened");
+        })
+
+        closeBtn.addEventListener("click", () => {
+            filter.classList.remove("filter--opened");
+        })
+        
+        window.addEventListener("keydown", (event) => {
+            if (event.keyCode === 27 && filter.classList.contains("filter--opened")) {
+                filter.classList.remove("filter--opened");
+            }
+        })
+    </script>
+    
+    <script src="js/main.js"></script>
+
+    <script>
+        let widgets = document.querySelectorAll(".filter__widget");
+
+        widgets.forEach((widget) => {
+            widget.firstElementChild.addEventListener("click", () => {
+                if (widget.classList.contains("filter__widget--opened")) {
+                    widget.classList.remove("filter__widget--opened");
+                    widget.classList.add("filter__widget--closed");
+                } else {
+                    widget.classList.remove("filter__widget--closed");
+                    widget.classList.add("filter__widget--opened");
+                }
+            });
+        })
+    </script>
+</body>
+</html>
