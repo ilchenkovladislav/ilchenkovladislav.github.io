@@ -461,7 +461,7 @@ img {
   margin-left: 10px; }
   @media (min-width: 768px) {
     .stats__value sup {
-      top: 0; } }
+      top: 25px; } }
 
 .stats__field {
   font-size: 18px;
