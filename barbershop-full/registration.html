@@ -183,12 +183,12 @@
     <div class="login-popup">
         <h2 class="login-popup__title">Личный кабинет</h2>
         <p class="login-popup__subtitle">Введите свой логин и пароль, чтобы войти</p>
-        <form action="">
-            <label class="login-popup__label">
+        <form class="login-popup__form" action="" method="POST">
+            <label class="login-popup__label login-popup__label--login">
                 Логин
                 <input class="login-popup__login" type="text" placeholder="Логин">
             </label>
-            <label class="login-popup__label">
+            <label class="login-popup__label login-popup__label--password">
                 Пароль
                 <input class="login-popup__password" type="password" placeholder="Пароль">
             </label>
@@ -201,7 +201,7 @@
             </div>
             <button class="login-popup__submit button" type="submit">Войти в личный кабинет</button>
         </form>
-        <button class="login-popup__close button">Закрыть форму</button>
+        <button class="login-popup__close button" type="button">Закрыть форму</button>
     </div>
 
     <script src="js/main.js"></script>
