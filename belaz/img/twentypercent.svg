@@ -1,0 +1,21 @@
+<svg id="Группа_14" data-name="Группа 14" xmlns="http://www.w3.org/2000/svg" width="125" height="125" viewBox="0 0 102 102">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        font-size: 30px;
+        fill: #fff;
+        text-anchor: middle;
+        font-family: ProximaNova;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <circle id="Эллипс_1" data-name="Эллипс 1" class="cls-1" cx="51" cy="51" r="50"/>
+  <text id="_20_" data-name="20% " class="cls-2" x="53.646" y="60.897">20%</text>
+</svg>

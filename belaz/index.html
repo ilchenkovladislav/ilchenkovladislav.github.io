@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eddie's car - запчасти для белаз</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__outer-wrapper">
+            <div class="header__logo">
+                <img src="img/logo.svg" alt="Eddie's car логотип">
+                <span class="header__logo-text">Eddie's-Car</span>
+            </div>
+
+            <button class="header__toggle" type="button"><span class="header__burger">Открыть меню</span></button>
+
+            <div class="header__inner-wrapper">
+                <button class="header__close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+                <div class="header__working-hours">
+                    <p class="header__time">c 9:00 до 21:00 <br> без выходных</p>
+                </div>
+    
+                <div class="header__phones">
+                    <a class="header__phone" href="tel:+78182474725">+7 818 247 47 25</a>
+                    <span class="header__slash">\</span>
+                    <a class="header__phone" href="tel:+78182474725">+7 818 247 28 91</a>
+                </div>
+    
+                <button class="button header__request-call" type="button">Заказать звонок</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main">
+            <div class="container main__container">
+                <div class="main__wrapper">
+                    <h1 class="main__title">Оригинальные запчасти <br> для белаз</h1>
+                    <p class="main__text">С бесплатной доставкой <br> в ваш город!</p>
+                    <ul class="main__advantages">
+                        <li class="main__advantage main__advantage--price">Дилерские цены - ниже на 20%, работаем без посредников!</li>
+                        <li class="main__advantage main__advantage--delivery">Срочная бесплатная доставка за 7 дней</li>
+                        <li class="main__advantage main__advantage--installment">Даем рассрочку 6 месяцев</li>
+                        <li class="main__advantage main__advantage--guarantee">Даем гарантию от 12 месяцев</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="get-price">
+            <div class="container">
+                <h2 class="secondary-title get-price__title">Получите прайс прямо сейчас <br> на электронную почту!</h2>
+                <form action="#" class="get-price__form" method="POST">
+                    <div class="get-price__input-wrapper get-price__input-wrapper--email">
+                        <label class="visually-hidden" for="get-price__email">Email</label>
+                        <input class="get-price__input" type="text" name="email" id="get-price__email" placeholder="Введите ваш e-mail" required>
+                    </div>
+                    <div class="get-price__input-wrapper get-price__input-wrapper--phone">
+                        <label class="visually-hidden" for="get-price__phone">Телефон</label>
+                        <input class="get-price__input" type="tel" name="phone" id="get-price__phone" placeholder="Введите ваш телефон" required>
+                    </div>
+                    <p class="get-price__text">Прайс придет к вам на почту <br> в течение 5 минут!</p>
+                    <button class="button get-price__submit" type="submit">Получить прайс</button>
+                </form>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="container">
+                <h2 class="secondary-title advantages__title">Вам не придется ждать!</h2>
+                <p class="under-title-text advantages__text">Любые запчасти для всех моделей Белаз всегда в наличии!</p>
+                <ul class="advantages__list owl-carousel">
+                    <li class="advantages__item">
+                        <img src="img/engine.svg" alt="" class="advantages__img">
+                        <p class="advantages__description">Любые типы деталей от шайбы до двигателя!</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="img/dump-truck.svg" alt="" class="advantages__img">
+                        <p class="advantages__description">Все модификации Белаз от 45т до 450т</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="img/calendar.svg" alt="" class="advantages__img">
+                        <p class="advantages__description">Отгружаем в день заказа!</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="img/map-icon.svg" alt="" class="advantages__img">
+                        <p class="advantages__description">Доставляем в любое место!</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="detail">
+            <div class="container">
+                <h2 class="secondary-title">Ищете конкретную деталь?</h2>
+                <p class="under-title-text detail__text">Если у вас есть артикул - введите его в поле ниже и получите цену <br> ПРЯМО СЕЙЧАС!</p>
+                <form action="#" method="post" class="detail__form">
+                    <div class="detail__input-wrapper">
+                        <label class="visually-hidden" for="detail__code">Артикул</label>
+                        <input class="detail__input" type="text" name="code" id="detail__code" placeholder="Введите артикул детали" required>
+                    </div>
+                    <div class="detail__input-wrapper detail__input-wrapper--phone">
+                        <label class="visually-hidden" for="detail__phone">Номер телефона</label>
+                        <input class="detail__input" type="tel" name="phone" id="detail__phone" placeholder="Введите ваш телефон" required>
+                    </div>
+                    <button class="button detail__submit" type="submit">Узнать цену</button>
+                </form>
+                <p class="detail__postscript">Мы перезвоним вам в течение 3 минут и назовем цену детали!</p>
+                <p class="detail__call-text">Или вы можете перезвонить нам сами:</p>
+                <a class="detail__call" href="tel:+78182474725">+7 818 247 47 25</a>
+            </div>
+        </section>
+        <section class="guarantee">
+            <div class="container">
+                <h2 class="secondary-title">Мы гарантируем сохранность деталей во время перевозки!</h2>
+                <ul class="guarantee__list">
+                    <li class="guarantee__item">
+                        <img class="guarantee__img" width="230" height="300" src="img/guarantee-1.jpg" srcset="img/guarantee-1@2x.jpg 2x" alt="">
+                        <p class="guarantee__text">Гарантия на целостность поставки прописана в договоре</p>
+                        <a class="guarantee__more" href="#">Подробнее</a>
+                    </li>
+                    <li class="guarantee__item">
+                        <img class="guarantee__img" width="230" height="300" src="img/guarantee-2.jpg" srcset="img/guarantee-2@2x.jpg 2x" alt="">
+                        <p class="guarantee__text">Каждая запчасть доставляется с завода в жесткой упаковке</p>
+                        <a class="guarantee__more" href="#">Подробнее</a>
+                    </li>
+                    <li class="guarantee__item">
+                        <img class="guarantee__img" width="230" height="300" src="img/guarantee-3.jpg" srcset="img/guarantee-3@2x.jpg 2x" alt="">
+                        <p class="guarantee__text">Дополнительный контроль качества нашими специалистами</p>
+                        <a class="guarantee__more" href="#">Подробнее</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="container">
+                <h2 class="secondary-title advantages__title">У нас разработаны бонусные системы <br> и скидки для наших клиентов</h2>
+                <ul class="advantages__list owl-carousel">
+                    <li class="advantages__item">
+                        <img src="img/tenpercent.svg" alt="" class="advantages__img">
+                        <p class="advantages__description">Дополнительная скидка 10% на вторую запчасть и любые последующие</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="img/twentypercent.svg" alt="" class="advantages__img">
+                        <p class="advantages__description">Скидка 20% при заключении договора на годовое сервисное обслуживание</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="img/delivery-truck.svg" alt="" class="advantages__img">
+                        <p class="advantages__description">Бесплатная доставка по всей России для всех клиентов</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="img/support.svg" alt="" class="advantages__img">
+                        <p class="advantages__description">Бесплатная круглосуточная техническая поддержка</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="faq">
+            <div class="container">
+                <h2 class="secondary-title">У вас остались вопросы?</h2>
+                <p class="under-title-text">На ваши вопросы отвечает Эдуард</p>
+
+                <div class="faq__inner-wrapper">
+                    <div class="faq__list-wrapper">
+                        <ol class="faq__list">
+                            <li class="faq__item">
+                                <button class="faq__question" type="button">Как заказать деталь правильно?</button>
+                                <div class="faq__answer">
+                                    <button class="faq__close">Закрыть ответ</button>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quibusdam, illum ipsa perferendis excepturi aut?
+                                </div>
+                            </li>
+                            <li class="faq__item">
+                                <button class="faq__question" type="button">Что делать, если запчасти не понадобились?</button>
+                                <div class="faq__answer">
+                                    <button class="faq__close">Закрыть ответ</button>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quibusdam, illum ipsa perferendis excepturi aut?
+                                </div>
+                            </li>
+                            <li class="faq__item">
+                                <button class="faq__question" type="button">Можете ли вы установить деталь?</button>
+                                <div class="faq__answer">
+                                    <button class="faq__close">Закрыть ответ</button>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quibusdam, illum ipsa perferendis excepturi aut?
+                                </div>
+                            </li>
+                            <li class="faq__item">
+                                <button class="faq__question" type="button">В чем приемущество оригинальных деталей?</button>
+                                <div class="faq__answer">
+                                    <button class="faq__close">Закрыть ответ</button>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, exercitationem.
+                                    <br>
+                                    <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero commodi quas, optio vel nobis recusandae possimus laudantium sint dolore vero?
+                                </div>
+                            </li>
+                            <li class="faq__item">
+                                <button class="faq__question" type="button">Можно ли сделать заказ из другой страны?</button>
+                                <div class="faq__answer">
+                                    <button class="faq__close">Закрыть ответ</button>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quibusdam, illum ipsa perferendis excepturi aut?
+                                </div>
+                            </li>
+                            <li class="faq__item faq__item--hidden">
+                                <button class="faq__question" type="button">Можно ли вопрос 1?</button>
+                                <div class="faq__answer">
+                                    <button class="faq__close">Закрыть ответ</button>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quibusdam, illum ipsa perferendis excepturi aut?
+                                </div>
+                            </li>
+                            <li class="faq__item faq__item--hidden">
+                                <button class="faq__question" type="button">Можно ли вопрос 2?</button>
+                                <div class="faq__answer">
+                                    <button class="faq__close">Закрыть ответ</button>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quibusdam, illum ipsa perferendis excepturi aut?
+                                </div>
+                            </li>
+                        </ol>
+                        <button class="faq__more" type="button">Еще вопросы</button>
+                    </div>
+                    <div class="faq__img-wrapper">
+                        <img class="faq__img" width="600" height="450" src="img/director.jpg" alt="Директор компании ООО Eddie's car" srcset="img/director@2x.jpg 2x">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages advantages--light">
+            <div class="container">
+                <h2 class="secondary-title">С нами удобно работать!</h2>
+                <p class="under-title-text">Более 70% клиентов приходят к нам по рекомендации!</p>
+                <ul class="advantages__list owl-carousel">
+                    <li class="advantages__item">
+                        <img src="img/payment.svg" alt="" class="advantages__img">
+                        <p class="advantages__description">Вы вносите предоплату в размере 50% от стоимости запчасти</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="img/logistics.svg" alt="" class="advantages__img">
+                        <p class="advantages__description">Отправляем запчасти в день заказа</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="img/check-list.svg" alt="" class="advantages__img">
+                        <p class="advantages__description">Получаете деталь, проверяете, оплачиваете оставшиеся 50%</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="storage">
+            <div class="container">
+                <h2 class="secondary-title">У нас собственный склад!</h2>
+                <p class="under-title-text">Это позволяет нам быстро обрабатывать запросы и отгружать детали в день заказа!</p>
+    
+                <ul class="storage__list owl-carousel owl-theme">
+                    <li class="storage__item"><img src="img/storage-1.jpg" alt="Наш склад в Москве" srcset="img/storage-1@2x.jpg 2x"></li>
+                    <li class="storage__item"><img src="img/storage-2.jpg" alt="Наш склад в Москве" srcset="img/storage-2@2x.jpg 2x"></li>
+                    <li class="storage__item"><img src="img/storage-3.jpg" alt="Наш склад в Москве" srcset="img/storage-3@2x.jpg 2x"></li>
+                    <li class="storage__item"><img src="img/storage-4.jpg" alt="Наш склад в Москве" srcset="img/storage-4@2x.jpg 2x"></li>
+                    <li class="storage__item"><img src="img/storage-5.jpg" alt="Наш склад в Москве" srcset="img/storage-5@2x.jpg 2x"></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="advantages advantages--light">
+            <div class="container">
+                <h2 class="secondary-title">У нас есть мобильные бригады, готовые выехать в любой момент!</h2>
+                <ul class="advantages__list owl-carousel">
+                    <li class="advantages__item">
+                        <img src="img/delivery-truck-2.svg" alt="" class="advantages__img">
+                        <p class="advantages__description">Организуем выезд специалистов в течение двух дней</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="img/bag.svg" alt="" class="advantages__img">
+                        <p class="advantages__description">Бригады укомплектованы оборудованием для работ любой сложности</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="img/sertificate.svg" alt="" class="advantages__img">
+                        <p class="advantages__description">Все специалисты проходят обучение и ежегодную аттестацию</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="consultation">
+            <div class="container">
+                <h2 class="secondary-title">Если вам необходима бесплатная консультация по вопросу обслуживания</h2>
+                <p class="consultation__text">Звоните нам по телефону:</p>
+                <a class="consultation__tel" href="tel:+78182474725">+7 818 247 47 25</a>
+                <form class="consultation__form" action="#" method="post">
+                    <div class="consultation__input-wrapper consultation__input-wrapper--phone">
+                        <label class="visually-hidden" for="consultation__phone">Номер телефона:</label>
+                        <input class="consultation__input" id="consultation__phone" type="tel" placeholder="Введите ваш телефон" required>
+                    </div>
+                    <button class="button consultation__submit" type="submit">Перезвонить сейчас</button>
+                </form>
+            </div>
+        </section>
+        <section class="contacts">
+            <h2 class="secondary-title">Приезжайте в наш офис!</h2>
+            <p class="contacts__address">г. Архангельск, Москва-Сити, оф. 3725</p>
+            <a href="tel:+78182474725" class="contacts__tel">+7 818 247 47 25</a>
+        </section>
+        <section class="map">
+            <h2 class="visually-hidden">Где нас найти?</h2>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9f8e80bd79e889c5abbca7f38ec9b706e813a3575910f25f619d601bda48e58e&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+            <img class="map__img no-js" src="img/map.jpg" alt="">
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__wrapper">
+            <div class="footer__logo">
+                <img src="img/logo.svg" alt="Eddie's car логотип">
+                <span class="footer__logo-text">Eddie's-Car</span>
+            </div>
+            <div class="footer__copyright">© Eddie's-Car, 2021</div>
+            <div class="footer__call">
+                <p class="footer__call-text">Есть вопросы? Звоните!</p>
+                <a href="tel:+78182474725" class="footer__tel">+7 818 247 47 25</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".storage__list").owlCarousel({
+                nav: true,
+                dots: false,
+                navContainerClass: "storage__nav",
+                navClass: ["storage__prev", "storage__next"],
+                responsive: {
+                    0: {
+                        items: 1,
+                        stagePadding: 40,
+                        margin: 20,
+                        loop: true
+                    },
+                    
+                    768: {
+                        items: 2,
+                        margin: 20
+                    },
+                    
+                    1200: {
+                        items: 3,
+                        margin: 20,
+                    }
+                }
+            });
+        });
+
+        $(window).on("load", () => {
+            if ($(this).width() > 767) {
+                $(".advantages__list").trigger('destroy.owl.carousel');
+            } else {
+                $(".advantages__list").owlCarousel({
+                    items: 1,
+                    dotsClass: "advantages__dots",
+                    dotClass: "advantages__dot",
+                    autoHeight: true
+                });
+            }
+        });
+    </script>
+
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $("input[type=tel]").inputmask("+7 (999) 999 99-99");
+            $("#get-price__email").inputmask("email");
+        });
+    </script>
+</body>
+</html>
