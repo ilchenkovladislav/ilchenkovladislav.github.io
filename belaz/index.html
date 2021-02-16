@@ -303,9 +303,11 @@
             <a href="tel:+78182474725" class="contacts__tel">+7 818 247 47 25</a>
         </section>
         <section class="map">
-            <h2 class="visually-hidden">Где нас найти?</h2>
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9f8e80bd79e889c5abbca7f38ec9b706e813a3575910f25f619d601bda48e58e&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-            <img class="map__img no-js" src="img/map.jpg" alt="">
+            <div class="loader loader-default"></div>
+            <!-- <h2 class="visually-hidden">Где нас найти?</h2> -->
+            <!-- <script id="ymap_lazy" type="text/javascript" charset="utf-8" async data-src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9f8e80bd79e889c5abbca7f38ec9b706e813a3575910f25f619d601bda48e58e&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script> -->
+            <img class="map__img" src="img/map.jpg" alt="Мы находимся по адресу город Архангельск, улица троицкий проспект 65, офис 3725 ">
+            <div id="map__yandex" class="map__yandex map__yandex--hidden"></div>
         </section>
     </main>
     <footer class="footer">
@@ -374,5 +376,7 @@
             $("#get-price__email").inputmask("email");
         });
     </script>
+
+    <script src="js/map.js"></script>
 </body>
 </html>

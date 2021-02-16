@@ -1,4 +1,4 @@
-document.querySelector(".no-js").classList.remove("no-js");
+// document.querySelector(".no-js").classList.remove("no-js");
 
 const headerToggle = document.querySelector(".header__toggle");
 const mobileWrapper = document.querySelector(".header__inner-wrapper");

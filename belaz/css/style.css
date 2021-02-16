@@ -279,12 +279,13 @@ img {
       margin-top: 0;
       width: 150px; } }
 
-.main {
-  background-image: url("../img/main-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-width: 768px) {
+  .main {
+    background-image: url("../img/main-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; } }
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
     .main {
       background-image: url("../img/main-bg@2x.jpg"); } }
 
@@ -1098,15 +1099,24 @@ img {
   margin-top: 20px;
   font-weight: bold; }
 
+.map {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; }
+
 .map__img {
   width: 100%;
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
-  display: none; }
-
-.map__img.no-js {
   display: block; }
+  .map__img--hidden {
+    display: none; }
+
+.map__yandex {
+  height: 400px; }
+  .map__yandex--hidden {
+    height: 0; }
 
 .footer {
   background-color: #191919;
@@ -1168,5 +1178,65 @@ img {
   @media (min-width: 768px) {
     .footer__tel {
       font-size: 20px; } }
+
+/* Индикатор загрузки, который показывается до загрузки карты */
+.loader {
+  position: absolute;
+  z-index: 15;
+  top: -100%;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000000;
+  transition: opacity .7s ease;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.55); }
+
+.loader:after,
+.loader:before {
+  box-sizing: border-box; }
+
+.loader.is-active {
+  top: 0;
+  opacity: 1; }
+
+.loader-default:after {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  content: '';
+  -webkit-animation: rotation 1s linear infinite;
+          animation: rotation 1s linear infinite;
+  border: solid 8px #ffffff;
+  border-left-color: transparent;
+  border-radius: 50%; }
+
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(359deg); } }
+
+@keyframes rotation {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(359deg); } }
+
+@-webkit-keyframes blink {
+  from {
+    opacity: .5; }
+  to {
+    opacity: 1; } }
+
+@keyframes blink {
+  from {
+    opacity: .5; }
+  to {
+    opacity: 1; } }
 
 /*# sourceMappingURL=style.css.map */
