@@ -13,13 +13,12 @@ function init () {
     controls: ['zoomControl', 'fullscreenControl'] // выбираем только те функции, которые необходимы при использовании
   });
   var myPlacemarkTemp = new ymaps.Placemark([64.544543, 40.515403], {
-      iconCaption: 'Троицкий проспект, 65',
     }, {
       // Опции.
       // Необходимо указать данный тип макета.
       iconLayout: 'default#imageWithContent',
       // Своё изображение иконки метки.
-      iconImageHref: '../img/icon-mark.svg',
+      iconImageHref: "img/icon-mark.svg",
       // Размеры метки.
       iconImageSize: [50, 50],
       // Смещение левого верхнего угла иконки относительно
