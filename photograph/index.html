@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Юлия Александрова - ваш фотограф на любой случай</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="page__body">
+    <header class="header">
+        <div class="header__wrapper">
+            <a class="header__logo" href="index.html"><img src="img/logo.svg" alt="Логотип Юлии Александровой" width="60" height="30"></a>
+            <nav class="header__menu menu">
+                <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list" aria-label="Закрыть меню">
+                    <svg class="menu__icon" width="32" height="32" aria-hidden="true">
+                        <use class="menu__icon-menu" href="img/sprite.svg#menu"></use>
+                        <use class="menu__icon-cross" href="img/sprite.svg#cross"></use>
+                    </svg>
+                </button>
+                <div class="menu__wrapper">
+                    <ul class="menu__list" id="menu__list">
+                        <li class="menu__item">
+                            <a href="#portfolio" class="menu__link">Портфолио</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#price" class="menu__link">Цены</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#about" class="menu__link">Обо мне</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#blog" class="menu__link">Блог</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#contacts" class="menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                    <a href="tel:+79102251297" class="menu__tel">+7 910 225 12 97</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="main">
+            <div class="main__wrapper">
+                <h1 class="main__title">Юлия<br>Александрова</h1>
+                <p class="main__text">Профессиональный фотограф с богатым многолетним опытом. Создаю неповторимые фотографии, которые способны сохранить эмоции и передать их другим людям.</p>
+                <a href="#portfolio" class="main__link">Посмотреть работы</a>
+            </div>
+        </section>
+        <section class="quote">
+            <h2 class="visually-hidden">Фотография - вид искусства</h2>
+            <div class="container quote__wrapper">
+                <img class="quote__img" src="img/quot-img.jpg" alt="">
+                <p class="quote__text">Фотография - это в первую очередь вид искусства, который позволяет нам остаться в памяти людей, запечатлеть живописные места  и навсегда сохранить дорогие сердцу моменты нашей жизни</p>
+            </div>
+        </section>
+        <section id="portfolio" class="portfolio">
+            <h2 class="visually-hidden">Мои работы</h2>
+            <div class="portfolio__grid">
+                <img class="portfolio__item-1" src="img/portfolio1.jpg" alt="">
+                <img class="portfolio__item-2" src="img/portfolio2.jpg" alt="">
+                <img class="portfolio__item-3" src="img/portfolio3.jpg" alt="">
+                <img class="portfolio__item-4" src="img/portfolio4.jpg" alt="">
+                <img class="portfolio__item-5" src="img/portfolio5.jpg" alt="">
+                <img class="portfolio__item-6" src="img/portfolio6.jpg" alt="">
+                <img class="portfolio__item-7" src="img/portfolio7.jpg" alt="">
+                <img class="portfolio__item-8" src="img/portfolio8.jpg" alt="">
+                <img class="portfolio__item-9" src="img/portfolio9.jpg" alt="">
+            </div>
+        </section>
+        <section id="price" class="price">
+            <div class="container">
+                <h2 class="secondary-title">Сколько будет стоить?</h2>
+                <div class="price__wrapper">
+                    <div class="price__description">
+                        <div id="price__desc-processing" class="price__item price__item--active">
+                            <img class="price__img" src="img/portfolio6.jpg" alt="">
+                            <p class="price__text">Цена за съемку состоит из многих частей, вы можете сами выбрать самый подходящий для вас вариант. Чтобы узнать примерную стоимость, выберете необходимые опции. Узнать подробнее о каждой можно нажав на нее</p>
+                        </div>
+                        <div id="price__desc-retouch" class="price__item">
+                            <img class="price__img" src="img/portfolio2.jpg" alt="">
+                            <p class="price__text">Далеко-далеко за словесными горам сных, живут рыбные тексты. До это он там вершину от всех знаках рамматики!</p>
+                        </div>
+                        <div id="price__desc-location" class="price__item">
+                            <img class="price__img" src="img/portfolio4.jpg" alt="">
+                            <p class="price__text">Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. До это х знаках переписали коварный грамматики!</p>
+                        </div>
+                        <div id="price__desc-hours" class="price__item">
+                            <img class="price__img" src="img/portfolio4.jpg" alt="">
+                            <p class="price__text">Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. До это х знаках переписали коварный грамматики!</p>
+                        </div>
+                        <div id="price__desc-timing" class="price__item">
+                            <img class="price__img" src="img/portfolio4.jpg" alt="">
+                            <p class="price__text">Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. До это х знаках переписали коварный грамматики!</p>
+                        </div>
+                    </div>
+                    <form action="#" class="price__calc">
+                        <label class="price__label">
+                            Обработка фото
+                            <input class="price__input price__input--checkbox" type="checkbox" name="processing">
+                        </label>
+                        <label class="price__label">
+                            Детальная ретушь
+                            <input class="price__input price__input--checkbox" type="checkbox" name="retouch">
+                        </label>
+                        <label class="price__label">
+                            Выбор локаций для съемки
+                            <input class="price__input price__input--checkbox" type="checkbox" name="location">
+                        </label>
+                        <label class="price__label">
+                            Длительность съемки (часы)
+                            <input class="price__input price__input--number" type="number" name="hours" value="2" min="1" max="10">
+                        </label>
+                        <label class="price__label">
+                            Срок обработки (дней)
+                            <input class="price__input price__input--number" type="number" name="timing" value="30" min="5" max="30" disabled>
+                        </label>
+                        <div class="price__total">2000р</div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="container">
+                <h2 class="secondary-title">Со мной работать выгодно</h2>
+                <ul class="advantages__list">
+                    <li class="advantages__item">
+                        <img src="img/advantages1.jpg" alt="" class="advantages__img">
+                        <h3 class="advantages__title">Большой опыт работы</h3>
+                        <p class="advantages__text">В течение фотосессии я создаю дружественную и расслабляющую обстановку. Это помогает настроиться на нужный лад, расслабиться и сделать замечательные снимки</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="img/advantages2.jpg" alt="" class="advantages__img">
+                        <h3 class="advantages__title">Большой опыт работы</h3>
+                        <p class="advantages__text">В течение фотосессии я создаю дружественную и расслабляющую обстановку. Это помогает настроиться на нужный лад, расслабиться и сделать замечательные снимки</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="img/advantages3.jpg" alt="" class="advantages__img">
+                        <h3 class="advantages__title">Большой опыт работы</h3>
+                        <p class="advantages__text">В течение фотосессии я создаю дружественную и расслабляющую обстановку. Это помогает настроиться на нужный лад, расслабиться и сделать замечательные снимки</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="img/advantages4.jpg" alt="" class="advantages__img">
+                        <h3 class="advantages__title">Большой опыт работы</h3>
+                        <p class="advantages__text">В течение фотосессии я создаю дружественную и расслабляющую обстановку. Это помогает настроиться на нужный лад, расслабиться и сделать замечательные снимки</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="img/advantages5.jpg" alt="" class="advantages__img">
+                        <h3 class="advantages__title">Большой опыт работы</h3>
+                        <p class="advantages__text">В течение фотосессии я создаю дружественную и расслабляющую обстановку. Это помогает настроиться на нужный лад, расслабиться и сделать замечательные снимки</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="img/advantages6.jpg" alt="" class="advantages__img">
+                        <h3 class="advantages__title">Большой опыт работы</h3>
+                        <p class="advantages__text">В течение фотосессии я создаю дружественную и расслабляющую обстановку. Это помогает настроиться на нужный лад, расслабиться и сделать замечательные снимки</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="secondary-title">Обо мне</h2>
+                <div class="about__wrapper">
+                    <img src="img/about-img.jpg" alt="" class="about__img">
+                    <div class="about__description">
+                        <p class="about__name">Юлия Александрова</p>
+                        <div class="about__text">Я профессиональный фотограф, и я бесконечно люблю то, чем занимаюсь вот уже 7 лет.
+
+                            <br>
+                            <br>
+                            
+                            В своих работах я всегда стараюсь сохранить трепет и эмоции, чтобы создать великолепное изображение. Для меня важно раскрыть творческую мысль каждого снимка.
+                            
+                            <br>
+                            <br>
+                            
+                            Я занимаюсь различными направлениями фотосъемки:
+                            
+                            <ul class="about__list">
+                                <li>- Портретная, предметная и интерьерная съемка</li>
+                                <li>- Профессиональная съемка свадеб</li>
+                                <li>- Фотосессии в стиле “Love Story”</li>
+                            </ul>
+
+                            <br>
+                            В течение фотосессии я создаю дружественную и расслабляющую обстановку. Это помогает настроиться на нужный лад, расслабиться и сделать замечательные снимки.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="blog">
+            <div class="container">
+                <h2 class="secondary-title">Мой блог</h2>
+                <ul class="blog__list">
+                    <li class="blog__item">
+                        <a href="#"><img src="img/main-bg.jpg" alt="" class="blog__img"></a>
+                        <a class="blog__title" href="#">Большой опыт работы</a>
+                        <p class="blog__description">В течение фотосессии я создаю дружественную и расслабляющую обстановку. Это помогает настроиться на нужный лад, расслабиться и сделать замечательные снимки</p>
+                    </li>
+                    <li class="blog__item">
+                        <a href="#"><img src="img/main-bg.jpg" alt="" class="blog__img"></a>
+                        <a class="blog__title" href="#">Большой опыт работы</a>
+                        <p class="blog__description">В течение фотосессии я создаю дружественную и расслабляющую обстановку. Это помогает настроиться на нужный лад, расслабиться и сделать замечательные снимки</p>
+                    </li>
+                    <li class="blog__item">
+                        <a href="#"><img src="img/main-bg.jpg" alt="" class="blog__img"></a>
+                        <a class="blog__title" href="#">Большой опыт работы</a>
+                        <p class="blog__description">В течение фотосессии я создаю дружественную и расслабляющую обстановку. Это помогает настроиться на нужный лад, расслабиться и сделать замечательные снимки</p>
+                    </li>
+                    <li class="blog__item">
+                        <a href="#"><img src="img/main-bg.jpg" alt="" class="blog__img"></a>
+                        <a class="blog__title" href="#">Большой опыт работы</a>
+                        <p class="blog__description">В течение фотосессии я создаю дружественную и расслабляющую обстановку. Это помогает настроиться на нужный лад, расслабиться и сделать замечательные снимки</p>
+                    </li>
+                </ul>
+                <a href="#" class="blog__more">Больше статей</a>
+            </div>
+        </section>
+        <section id="contacts" class="contacts">
+            <h2 class="visually-hidden">Контакты</h2>
+            <form action="#" class="contacts__form">
+                <label class="contacts__label">
+                    Имя
+                    <input class="contacts__input" type="text" placeholder="Введите ваше имя">
+                </label>
+                <label class="contacts__label">
+                    Телефон
+                    <input class="contacts__input" type="tel" placeholder="Введите ваш телефон">
+                </label>
+                <label class="contacts__label">
+                    Сообщение
+                    <textarea class="contacts__input" name="message" id="message" cols="30" rows="10" placeholder="Введите ваше сообщение"></textarea>
+                </label>
+                <button class="contacts__submit" type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__wrapper">
+            <div class="footer__contacts">
+                <a class="footer__email" href="mailto:ulaleksphoto@gmail.com">ulaleksphoto@gmail.com</a>
+                <a class="footer__tel" href="tel:+79102251297">+7 910 225 12 97</a>
+                <p class="footer__address">г. Санкт-Петербург, ул. Парашютная, д. 33</p>
+            </div>
+            <ul class="social">
+                <li class="social__item social__item--vk"><a href="https://vk.com/feed" class="social__link" target="_blank" rel="noopener noreferrer" aria-label="vk.com"></a></li>
+                <li class="social__item social__item--insta"><a href="https://www.instagram.com/" class="social__link" target="_blank" rel="noopener noreferrer" aria-label="instagram"></a></li>
+                <li class="social__item social__item--tg"><a href="https://telegram.org/" class="social__link" target="_blank" rel="noopener noreferrer" aria-label="telegram"></a></li>
+            </ul>
+        </div>
+        <div class="footer__copyright">© UAP | 2021</div>
+    </footer>
+
+    <script>
+        const menu = document.querySelector(".menu");
+        const menuBtn = document.querySelector(".menu__button");
+        const menuWrapper = document.querySelector(".menu__wrapper");
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.toggle("menu--opened")
+            menuBtn.classList.toggle("menu__button--open");
+            menuWrapper.classList.toggle("menu__wrapper--opened");
+        });
+    </script>   
+
+    <script>
+        const labels = document.querySelectorAll(".price__label");
+        
+        let removeActive = () => {
+            const itemActive = document.querySelector(".price__item--active");
+            itemActive.classList.remove("price__item--active");
+        }
+
+        let addActive = (label) => {
+            let name = label.children[0].getAttribute("name");
+
+            let id = "#price__desc-" + name;
+            document.querySelector(id).classList.add("price__item--active");
+        }
+
+        labels.forEach((label) => {
+            label.addEventListener("click", () => {
+                removeActive();
+                addActive(label);
+            })
+        })
+
+
+        const inputHours = document.querySelector(".price__input--number[name=hours]");
+        const inputTime = document.querySelector(".price__input--number[name=timing]");
+
+        const checkProc = document.querySelector(".price__input--checkbox[name=processing]");
+        const checkRetouch = document.querySelector(".price__input--checkbox[name=retouch]");
+        const checkLocation = document.querySelector(".price__input--checkbox[name=location]");
+
+        const priceTotal = document.querySelector(".price__total");
+
+        let changeTotal = () => {
+            let total = 0;
+            if (inputTime.hasAttribute("disabled")) {
+                total = (500 * hours) + (retouch * hours) + loc;
+                console.log("disabled");
+            } else {
+                total = (500 * hours) + (processing * hours) + (retouch * hours) + Number((((2500*time) - 87500) / -25) * (hours / 2)) + loc;
+            }
+
+            priceTotal.textContent = `${total}р`;
+        }
+
+        let processing = 0;
+        let retouch = 0;
+        let loc = 0;
+        let hours = Number(inputHours.value);
+        let time = Number(inputTime.value);
+
+        changeTotal();
+
+
+        checkProc.addEventListener("click", (e) => {
+            if (e.target.checked) {
+                processing = 500;
+            } else {
+                processing = 0;
+            }
+
+            inputTime.toggleAttribute("disabled");
+            changeTotal();
+        });
+
+        checkRetouch.addEventListener("click", (e) => {
+            if (e.target.checked) {
+                retouch = 200;
+            } else {
+                retouch = 0;
+            }
+            changeTotal();
+        });
+
+        checkLocation.addEventListener("click", (e) => {
+            if (e.target.checked) {
+                loc = 1000;
+            } else {
+                loc = 0;
+            }
+            changeTotal();
+        });
+
+        inputHours.addEventListener("change", (e) => {
+            if (Number(e.target.value) > 10) {
+                e.target.value = 10;
+            } else if (Number(e.target.value) < 1) {
+                e.target.value = 1;
+            }
+            hours = Number(e.target.value);
+            changeTotal();
+        });
+
+        inputTime.addEventListener("change", (e) => {
+            if (Number(e.target.value) > 30) {
+                e.target.value = 30;
+            } else if (Number(e.target.value) < 5) {
+                e.target.value = 5;
+            }
+
+            time = Number(e.target.value);
+            changeTotal();
+        })
+    </script>
+</body>
+</html>
