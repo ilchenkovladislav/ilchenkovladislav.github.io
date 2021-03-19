@@ -30,11 +30,11 @@ function init () {
   // Получаем первый экземпляр коллекции слоев, потом первый слой коллекции
   var layer = myMapTemp.layers.get(0).get(0);
  
+  spinner.removeClass('is-active');
   // Решение по callback-у для определения полной загрузки карты
-  waitForTilesLoad(layer).then(function() {
-    // Скрываем индикатор загрузки после полной загрузки карты
-    spinner.removeClass('is-active');
-  });
+  // waitForTilesLoad(layer).then(function() {
+  //   // Скрываем индикатор загрузки после полной загрузки карты
+  // });
 }
  
 // Функция для определения полной загрузки карты (на самом деле проверяется загрузка тайлов) 
